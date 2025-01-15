@@ -1,5 +1,4 @@
-import type { Metadata } from "next";
-import { Geist, Geist_Mono, Raleway } from "next/font/google";
+import { Raleway } from "next/font/google";
 import "./globals.css";
 
 export const raleway = Raleway({

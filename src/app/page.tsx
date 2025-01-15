@@ -1,8 +1,5 @@
 "use client";
 import Image from "next/image";
-import { raleway } from "./layout";
-import villa from "./villa.jpg";
-import HamburgerMenuSvg from "./components/ui/HamburgerMenuSvg.svg";
 
 export default function Home() {
   return (
