@@ -120,9 +120,9 @@ export default function Home() {
             alt="hi"
           />
         </div>
-        <div className="pl-24">
+        <div className="pl-24 pt-20">
           <div className="pt-40 pb-32 flex items-center ">
-            <h2 className="text-[40px] font-medium  text-[#353535]">
+            <h2 className="text-[50px] font-medium  text-[#353535]">
               NUESTROS SERVICIOS
             </h2>
             <div className="w-[150px] bg-[#626262] h-[1px] ml-8 opacity-60 mt-2"></div>
@@ -178,18 +178,18 @@ export default function Home() {
       </section>
       <section className="flex items-center px-24 justify-between">
         <div className="pt-32 pb-32 flex items-center ">
-          <h2 className="text-[40px] font-medium  text-[#353535]">PROYECTOS</h2>
+          <h2 className="text-[50px] font-medium  text-[#353535]">PROYECTOS</h2>
           <div className="w-[150px] bg-[#626262] h-[1px] ml-8 opacity-60 mt-2"></div>
         </div>
 
-        <p className="w-[800px] text-lg text-[#353535] leading-loose pt-10">
+        <p className="w-[800px] text-xl text-[#353535] leading-loose pt-10">
           Acompañamos a nuestros clientes particulares o inversionistas durante
           el proceso de diseño de la obra tomando en cuenta sus experiencias y
           necesidades para adecuarlas a la construcción de una obra moderna y
           acorde a sus necesidades.
         </p>
-      </section>{" "}
-      <div className="w-full grid grid-cols-2 px-24 pb-40 gap-20">
+      </section>
+      <div className="w-full grid grid-cols-2 px-24 pb-40 gap-20 pt-40">
         <div>
           <div className="w-full h-[650px] relative">
             <Image
