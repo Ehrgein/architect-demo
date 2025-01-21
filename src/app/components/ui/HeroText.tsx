@@ -9,7 +9,7 @@ function HeroText() {
           Estudio de arquitectura orientado a la resolución y ejecución de
           proyectos tanto para clientes particulares como corporativos.
         </p>
-        <div className="w-64 border-primary border-2 h-14 flex items-center justify-between">
+        <div className="w-64 h-14  border-primary border-2 flex items-center justify-between">
           <button className="text-lg ml-8 p-3 pr-[2rem] h-full items-center justify-center tracking-wide border-r-2 border-primary">
             EXPLORAR
           </button>

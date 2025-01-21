@@ -4,6 +4,7 @@ import Services from "./components/ui/Services";
 import Projects from "./components/ui/Projects";
 import EnterModal from "./components/transitions/EnterModal";
 import VideoHero from "./components/ui/VideoHero";
+import Footer from "./components/Layout/Footer";
 
 export default function Home() {
   return (
@@ -12,7 +13,7 @@ export default function Home() {
       <VideoHero />
       <AboutUs />
       <Services />
-      <section className=" pt-40 pb-40">
+      <section className="pt-40 pb-40">
         <div className="w-full h-[900px] relative">
           <Image
             src="/proyects.jpg"
@@ -23,6 +24,9 @@ export default function Home() {
         </div>
       </section>
       <Projects />
+      <div className="px-12">
+        <Footer />
+      </div>
     </>
   );
 }

@@ -1,7 +1,7 @@
 "use client";
 import React from "react";
 import Image from "next/image";
-import { projects } from "@/app/helpers/projectadata";
+import { projects } from "@/app/constants/projectdata";
 import { motion } from "motion/react";
 
 function ProjectTitle() {

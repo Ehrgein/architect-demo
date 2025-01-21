@@ -1,5 +1,5 @@
 import React from "react";
-import { projectsTwo } from "../helpers/projectadata";
+import { projectsTwo } from "../constants/projectdata";
 import Image from "next/image";
 import FixedNavBar from "../components/ui/FixedNavBar";
 
