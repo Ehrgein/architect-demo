@@ -28,7 +28,7 @@ function FooterColumn({
 
 function Footer() {
   return (
-    <div className="w-full pt-36 flex flex-col">
+    <div className="w-full pt-36 flex flex-col px-12">
       <div className="w-full px-7 h-[1px] bg-[#363636]"></div>
       <div className="w-full grid grid-cols-10">
         <FooterColumn

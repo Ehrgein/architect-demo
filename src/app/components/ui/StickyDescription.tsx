@@ -18,7 +18,10 @@ function StickyDescription({
               Project Details
             </h3>
             {project_details.map((paragraph) => (
-              <p className="pt-9 text-base leading-[1.8] w-[50ch] tracking-wide">
+              <p
+                key={paragraph}
+                className="pt-9 text-base leading-[1.8] w-[50ch] tracking-wide"
+              >
                 {paragraph}
               </p>
             ))}

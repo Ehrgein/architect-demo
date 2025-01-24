@@ -12,7 +12,7 @@ import Footer from "../../components/Layout/Footer";
 import NextProject from "../../components/Layout/NextProject";
 import NavProject from "@/app/components/Layout/NavProject";
 import { projects } from "@/app/constants/projectdata";
-import { Metadata } from "next";
+import next, { Metadata } from "next";
 
 export async function generateMetadata({
   params,
@@ -82,7 +82,14 @@ async function ProjectPage({ params }: { params: Promise<{ slug: string }> }) {
     about_paragraph,
     project_details,
     src,
+    id,
   } = project;
+
+  // const nextSlug = projects[id % projects.length].slug;
+
+  const nextSlug = projects[id % projects.length].slug;
+  const nextTitle = projects[id % projects.length].title;
+  const nextImage = projects[id % projects.length].src;
 
   return (
     <>
@@ -132,9 +139,12 @@ async function ProjectPage({ params }: { params: Promise<{ slug: string }> }) {
             <ParallaxImage src={land2} height="h-[950px]" width="w-full" />
           </div>
           <div className="pt-36">
-            <NextProject />
+            <NextProject
+              nextSlug={nextSlug}
+              nextTitle={nextTitle}
+              nextSrc={nextImage}
+            />
           </div>
-          <Footer />
         </div>
       </div>
     </>

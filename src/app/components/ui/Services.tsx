@@ -55,6 +55,7 @@ function Services() {
                 toma de decisiones y comunican de manera efectiva el impacto
                 visual de cada diseño.
               </p>
+              I
             </li>
           </ul>
         </div>

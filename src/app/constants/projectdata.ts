@@ -5,6 +5,7 @@ import villa3 from "../../../public/villa3.jpg";
 import villa4 from "../../../public/villa4.jpg";
 
 export type Project = {
+  id: number;
   title: string;
   type: string;
   subtype: string;
@@ -20,6 +21,7 @@ export type Project = {
 
 export const projects: Project[] = [
   {
+    id: 1,
     title: "Ocean Paradise",
     type: "Country Club",
     subtype: "Commercial",
@@ -40,6 +42,7 @@ export const projects: Project[] = [
     src: villa1,
   },
   {
+    id: 2,
     title: "Alajuela",
     type: "Residencia Privada",
     subtype: "Residential",
@@ -60,6 +63,7 @@ export const projects: Project[] = [
       "Explore Alajuela, a private residence in Costa Rica offering stunning views, modern design, and sustainable luxury. A serene retreat in the heart of nature.",
   },
   {
+    id: 3,
     title: "Sysyphus",
     type: "Luxury Resort",
     year: 2023,
@@ -80,6 +84,7 @@ export const projects: Project[] = [
       "Experience Sysyphus Luxury Resort in Paros, Greece. Enjoy Cycladic elegance, breathtaking Aegean views, and sustainable luxury. A perfect island retreat.",
   },
   {
+    id: 4,
     title: "Aqua Suites",
     type: "Luxury Hotel",
     year: 2023,
