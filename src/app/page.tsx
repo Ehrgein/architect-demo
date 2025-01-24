@@ -1,10 +1,5 @@
 import Image from "next/image";
-import AboutUs from "./components/ui/AboutUs";
-import Services from "./components/ui/Services";
 import Projects from "./components/ui/Projects";
-import EnterModal from "./components/transitions/EnterModal";
-import VideoHero from "./components/ui/VideoHero";
-import Footer from "./components/Layout/Footer";
 import NavProject from "./components/Layout/NavProject";
 
 export default function Home() {
@@ -22,10 +17,12 @@ export default function Home() {
       <div className="w-full pt-20 px-8">
         <div className="w-full h-[900px] relative">
           <Image
-            src="/aboutimage.jpg"
+            src="/optabout.jpg"
             fill
             className="w-full h-full object-cover"
             alt="hi"
+            sizes="(max-width:2000px) 85vw"
+            priority
           />
         </div>
       </div>
