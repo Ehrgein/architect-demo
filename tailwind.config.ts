@@ -11,6 +11,13 @@ export default {
       colors: {
         primary: "hsl(var(--primary))",
         accent: "hsl(var(--accent))",
+        black: {
+          pure: "hsl(0, 0%, 0%)",
+          dark: "hsl(0, 0%, 10%)",
+          light: "hsl(0, 0%, 15%)",
+          mediumLight: "hsl(0, 0%, 25%)",
+          medium: "hsl(0, 0%, 50%)",
+        },
       },
       fontSize: {
         hero: [

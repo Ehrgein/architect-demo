@@ -4,7 +4,7 @@
 
 @layer base {
   :root {
-    --primary: 0deg 0% 100%;
+    --primary: 0deg 0% 15%;
     --accent: 0deg 0% 85%;
   }
 }

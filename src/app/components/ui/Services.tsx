@@ -3,61 +3,63 @@ import Image from "next/image";
 
 function Services() {
   return (
-    <section className="pt-40 pb-60 relative flex flex-col">
-      <div className="w-full h-[800px] relative">
-        <Image
-          src="/modernhouse.jpg"
-          className="w-full h-full object-cover "
-          fill
-          alt="hi"
-        />
-      </div>
-      <div className="pl-24 pt-20">
-        <div className="pt-40 pb-32 flex items-center ">
-          <h2 className="text-[50px] font-medium  text-[#353535]">
-            NUESTROS SERVICIOS
-          </h2>
-          <div className="w-[150px] bg-[#626262] h-[1px] ml-8 opacity-60 mt-2"></div>
-        </div>
-        <div>
-          <ul className="pl-4 flex gap-32">
-            <li>
-              <h3 className="text-3xl text-[#353535] opacity-90 -ml-4">
-                Arquitectura Familiar
-              </h3>
-              <p className="max-w-[50ch] mt-10 text-lg  pl-4  border-l-[1px] border-black leading-loose ">
-                Diseñamos hogares que reflejan las historias y necesidades de
-                las familias que los habitan. Nuestro enfoque en la arquitectura
-                residencial combina funcionalidad y estética, creando espacios
-                que priorizan la comodidad, la privacidad y la conexión con el
-                entorno.
-              </p>
-            </li>
-            <li>
-              <h3 className="text-3xl text-[#353535] opacity-90 -ml-4">
-                Arquitectura Comercial
-              </h3>
-              <p className="max-w-[50ch] text-lg mt-10 pl-4  border-l-[1px] border-black leading-loose ">
-                Creamos espacios comerciales que son tanto funcionales como
-                visualmente impactantes. Entendemos la importancia de un diseño
-                que inspire productividad, fomente la interacción y refuerce la
-                identidad de tu marca.
-              </p>
-            </li>
-            <li>
-              <h3 className="text-3xl text-[#353535] opacity-90 -ml-4">
-                Rendering
-              </h3>
-              <p className="max-w-[50ch] mt-10 text-lg  pl-4  border-l-[1px] border-black leading-loose ">
-                Damos vida a tus ideas con visualizaciones de alta calidad que
-                capturan cada detalle de tu proyecto. Nuestros servicios de
-                renderizado ofrecen representaciones realistas que facilitan la
-                toma de decisiones y comunican de manera efectiva el impacto
-                visual de cada diseño.
-              </p>
-              I
-            </li>
-          </ul>
+    <section className="py-36 px-8">
+      <div className="pt-20">
+        <h3 className="text-5xl font-medium text-black-light">OUR SERVICES</h3>
+        <div className="grid grid-cols-3 gap-6 pt-12">
+          <article className="space-y-5">
+            <div className="relative w-full h-[750px]">
+              <Image
+                src="/shopmal.jpg"
+                alt="hi"
+                className="w-full h-full object-cover"
+                fill
+              />
+            </div>
+            <h4 className="text-3xl text-black-light pt-3">Commercial</h4>
+            <p className="pr-3 pt-1 leading-7 text-black-mediumLight">
+              Bring your commercial spaces to life with designs that are
+              tailored to your business goals. Whether it’s retail, office, or
+              hospitality, our services offer comprehensive architectural
+              solutions, from initial planning to detailed visualizations.
+            </p>
+          </article>
+          <article className="space-y-5">
+            <div className="relative w-full h-[750px]">
+              <Image
+                src="/newmodernhouse.jpg"
+                alt="hi"
+                className="w-full h-full object-cover"
+                fill
+              />
+            </div>
+            <h4 className="text-3xl text-black-light pt-3">
+              Private Residences
+            </h4>
+            <p className="pr-3 pt-1 leading-7 text-black-mediumLight">
+              Design your dream home with our specialized residential
+              architecture services. We work with you to create spaces that
+              reflect your style and needs, from cozy private residences to
+              expansive luxury homes. We bring your vision to life.
+            </p>
+          </article>
+          <article className="space-y-5">
+            <div className="relative w-full h-[750px]">
+              <Image
+                src="/render.png"
+                alt="hi"
+                className="w-full h-full object-cover"
+                fill
+              />
+            </div>
+            <h4 className="text-3xl text-black-light pt-3">Rendering</h4>
+            <p className="pr-3 pt-1 leading-7 text-black-mediumLight">
+              We create lifelike renderings of your projects, bringing every
+              detail to life with Unreal Engine 5. Our visualizations let you
+              experience your design—whether it’s a retail space, office, or
+              residence—before it’s built.
+            </p>
+          </article>
         </div>
       </div>
     </section>

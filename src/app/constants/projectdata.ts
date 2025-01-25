@@ -3,6 +3,9 @@ import villa1 from "../../../public/villa1.jpg";
 import villa2 from "../../../public/villa2.jpg";
 import villa3 from "../../../public/villa3.jpg";
 import villa4 from "../../../public/villa4.jpg";
+import villa5 from "../../../public/newcapesolis.jpg";
+import villa6 from "../../../public/villa6.jpg";
+import shoppingmall from "../../../public/seoulstore.jpg";
 
 export type Project = {
   id: number;
@@ -44,7 +47,7 @@ export const projects: Project[] = [
   {
     id: 2,
     title: "Alajuela",
-    type: "Residencia Privada",
+    type: "Private Villa",
     subtype: "Residential",
     year: 2025,
     location: "Escazú, Costa Rica",
@@ -85,6 +88,27 @@ export const projects: Project[] = [
   },
   {
     id: 4,
+    title: "Cape Solis",
+    type: "Private Villa",
+    year: 2023,
+    subtype: "Commercial",
+    location: "Bangkok, Thailand",
+    slug: "cape-solis",
+    about_header:
+      "Aqua Suites offers a unique coastal-inspired luxury experience, blending serene design with the energy of Thailand’s bustling capital.",
+    about_paragraph:
+      "Situated in the vibrant heart of Bangkok, Thailand, Aqua Suites redefines luxury with its coastal-inspired design and world-class amenities. This premier destination combines the tranquility of a seaside escape with the excitement of a bustling metropolis, offering guests a unique and unforgettable stay.",
+    project_details: [
+      "Aqua Suites features a sleek modern design with ocean-inspired interiors, creating a serene atmosphere in the middle of Bangkok. The suites are elegantly furnished with contemporary decor and offer breathtaking cityscape views.",
+      "Guests can enjoy a rooftop infinity pool, a state-of-the-art fitness center, and fine dining experiences featuring both Thai and international cuisine. Aqua Suites is designed to cater to both leisure and business travelers.",
+      "Sustainability is integral to Aqua Suites, with eco-friendly practices such as energy-efficient lighting, water recycling systems, and green rooftop gardens. The hotel exemplifies how luxury accommodations can prioritize environmental responsibility.",
+    ],
+    src: villa5,
+    description:
+      "Stay at Aqua Suites, a luxury hotel in Bangkok, Thailand, blending coastal serenity with urban sophistication. Enjoy modern design, fine dining, and eco-friendly amenities.",
+  },
+  {
+    id: 5,
     title: "Aqua Suites",
     type: "Luxury Hotel",
     year: 2023,
@@ -101,6 +125,27 @@ export const projects: Project[] = [
       "Sustainability is integral to Aqua Suites, with eco-friendly practices such as energy-efficient lighting, water recycling systems, and green rooftop gardens. The hotel exemplifies how luxury accommodations can prioritize environmental responsibility.",
     ],
     src: villa4,
+    description:
+      "Stay at Aqua Suites, a luxury hotel in Bangkok, Thailand, blending coastal serenity with urban sophistication. Enjoy modern design, fine dining, and eco-friendly amenities.",
+  },
+  {
+    id: 6,
+    title: "The Hyundai Seoul",
+    type: "Department Store",
+    year: 2023,
+    subtype: "Commercial",
+    location: "Seoul, South Korea",
+    slug: "the-hyundai-seoul",
+    about_header:
+      "Aqua Suites offers a unique coastal-inspired luxury experience, blending serene design with the energy of Thailand’s bustling capital.",
+    about_paragraph:
+      "Situated in the vibrant heart of Bangkok, Thailand, Aqua Suites redefines luxury with its coastal-inspired design and world-class amenities. This premier destination combines the tranquility of a seaside escape with the excitement of a bustling metropolis, offering guests a unique and unforgettable stay.",
+    project_details: [
+      "Aqua Suites features a sleek modern design with ocean-inspired interiors, creating a serene atmosphere in the middle of Bangkok. The suites are elegantly furnished with contemporary decor and offer breathtaking cityscape views.",
+      "Guests can enjoy a rooftop infinity pool, a state-of-the-art fitness center, and fine dining experiences featuring both Thai and international cuisine. Aqua Suites is designed to cater to both leisure and business travelers.",
+      "Sustainability is integral to Aqua Suites, with eco-friendly practices such as energy-efficient lighting, water recycling systems, and green rooftop gardens. The hotel exemplifies how luxury accommodations can prioritize environmental responsibility.",
+    ],
+    src: shoppingmall,
     description:
       "Stay at Aqua Suites, a luxury hotel in Bangkok, Thailand, blending coastal serenity with urban sophistication. Enjoy modern design, fine dining, and eco-friendly amenities.",
   },

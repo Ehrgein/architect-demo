@@ -3,41 +3,37 @@ import Image from "next/image";
 
 function AboutUs() {
   return (
-    <>
-      <section className="pt-40 pb-28 px-8 relative flex">
-        <div className="w-[1000px] h-[600px]">
-          <Image
-            src="/aboutimage.jpg"
-            className="w-full h-full object-cover"
-            width={870}
-            height={500}
-            alt="hi"
-          />
-        </div>
-        <div className="pl-16 max-w-[750px] flex flex-col pt-12 ">
-          <h2 className="text-3xl font-medium opacity-90 text-[#353535]">
-            Nosotros
-          </h2>
-          <p className="text-lg pt-12 leading-relaxed text-[#353535]">
-            En Prim Estudio, creemos que la simplicidad es la forma definitiva
-            de sofisticación. Especializados en arquitectura minimalista,
-            diseñamos espacios que equilibran forma, función y belleza.
-          </p>
-          <p className="text-lg pt-10 leading-relaxed text-[#353535]">
-            Nuestras creaciones destacan por líneas limpias, materiales
-            naturales y un uso cuidadoso del espacio, generando ambientes que
-            inspiran calma y claridad.
-          </p>
-          <p className="text-lg pt-10 leading-relaxed text-[#353535]">
-            Nuestro enfoque combina creatividad y precisión, asegurando que cada
-            detalle contribuya a la armonía del diseño. Trabajamos estrechamente
-            con nuestros clientes para capturar su esencia y traducirla en
-            espacios que no solo sean estéticamente agradables, sino también
-            profundamente significativos.
-          </p>
-        </div>
-      </section>
-    </>
+    <section className="pt-40 pb-28 px-8 relative grid grid-cols-2 w-full gap-1">
+      <div className="">
+        <h3 className="text-3xl text-black-dark font-medium leading-normal w-[30ch] pl-10">
+          We design with intention, blending simplicity and depth.
+        </h3>
+      </div>
+      <article className="flex flex-col w-full mx-auto space-y-10">
+        <p className="text-xl leading-loose text-black-light w-[85%]">
+          Since its inception, our studio has seamlessly balanced its work
+          between traditional architectural projects, including private
+          residences, multi-family housing, and renovations, and commercial
+          developments such as industrial warehouses, retail spaces, and
+          corporate offices.
+        </p>
+        <p className="text-xl leading-loose text-black-light w-[85%]">
+          Y Studio is renowned for its hands-on approach and personalized
+          attention to every project. By fostering constant collaboration and
+          open communication with our clients, we ensure their visions are at
+          the heart of the design process.
+        </p>
+        <p
+          className="text-xl leading-loose text-black-light
+         w-[85%]"
+        >
+          By integrating these experiences, we craft innovative solutions
+          tailored to the specific needs of each project, creating spaces that
+          are functional, aesthetically striking, and deeply aligned with our
+          clients’ aspirations.
+        </p>
+      </article>
+    </section>
   );
 }
 
