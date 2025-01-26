@@ -4,7 +4,8 @@ import land3 from "../../../../public/land3.jpg";
 import ParallaxImage from "../ui/ParallaxImage";
 import Link from "next/link";
 import { StaticImageData } from "next/image";
-
+import { LinkProps } from "next/link";
+import ResetLenisLink from "@/app/helpers/ResetLenisLink";
 function NextProject({
   nextSlug,
   nextTitle,
@@ -14,16 +15,6 @@ function NextProject({
   nextTitle: string;
   nextSrc: StaticImageData;
 }) {
-  React.useEffect(() => {
-    if (typeof window !== "undefined") {
-      window.scrollTo({
-        top: 0,
-        left: 0,
-        behavior: "smooth",
-      });
-    }
-  }, [nextSlug]);
-
   return (
     <>
       <div className="space-y-8">
@@ -36,9 +27,9 @@ function NextProject({
         <h2 className="uppercase text-7xl text-[#363636]">{nextTitle}</h2>
       </div>
       <div className="pt-10">
-        <Link href={nextSlug} target="_top">
+        <ResetLenisLink href={`/projects/${nextSlug}`}>
           <ParallaxImage src={nextSrc} height="h-[650px]" width="w-full" />
-        </Link>
+        </ResetLenisLink>
       </div>
     </>
   );

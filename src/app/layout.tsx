@@ -20,7 +20,7 @@ export default function RootLayout({
 }>) {
   return (
     <html className={`${inter.className} lang="en"`}>
-      <body className={`antialiased bg-[#E5DCD8] relative`}>
+      <body className={`antialiased bg-[#E5DCD8]`}>
         <SmoothScrolling>
           {children}
           <Footer />
