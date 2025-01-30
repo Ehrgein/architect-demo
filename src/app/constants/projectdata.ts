@@ -20,6 +20,7 @@ export type Project = {
   project_details: string[];
   src: StaticImageData;
   description?: string;
+  alt?: string;
 };
 
 export const projects: Project[] = [
@@ -43,6 +44,7 @@ export const projects: Project[] = [
     description:
       "Discover Ocean Paradise, a luxurious country club in Bali, Indonesia, blending Balinese charm with modern elegance. Enjoy ocean views, world-class amenities, and sustainable luxury.",
     src: villa1,
+    alt: "Image of a country club with a pool",
   },
   {
     id: 2,
@@ -64,6 +66,7 @@ export const projects: Project[] = [
     src: villa2,
     description:
       "Explore Alajuela, a private residence in Costa Rica offering stunning views, modern design, and sustainable luxury. A serene retreat in the heart of nature.",
+    alt: "Modern luxury home in Costa Rica",
   },
   {
     id: 3,
@@ -85,6 +88,7 @@ export const projects: Project[] = [
     src: villa3,
     description:
       "Experience Sysyphus Luxury Resort in Paros, Greece. Enjoy Cycladic elegance, breathtaking Aegean views, and sustainable luxury. A perfect island retreat.",
+    alt: "Luxury resort in Paros facing the sea",
   },
   {
     id: 4,
@@ -92,7 +96,7 @@ export const projects: Project[] = [
     type: "Private Villa",
     year: 2023,
     subtype: "Commercial",
-    location: "Bangkok, Thailand",
+    location: "Cape Town",
     slug: "cape-solis",
     about_header:
       "Aqua Suites offers a unique coastal-inspired luxury experience, blending serene design with the energy of Thailand’s bustling capital.",
@@ -106,6 +110,7 @@ export const projects: Project[] = [
     src: villa5,
     description:
       "Stay at Aqua Suites, a luxury hotel in Bangkok, Thailand, blending coastal serenity with urban sophistication. Enjoy modern design, fine dining, and eco-friendly amenities.",
+    alt: "Private luxury villa near Cape Town's beaches",
   },
   {
     id: 5,
@@ -127,6 +132,7 @@ export const projects: Project[] = [
     src: villa4,
     description:
       "Stay at Aqua Suites, a luxury hotel in Bangkok, Thailand, blending coastal serenity with urban sophistication. Enjoy modern design, fine dining, and eco-friendly amenities.",
+    alt: "Luxury hotel with palm trees and a pool facing you",
   },
   {
     id: 6,
@@ -148,6 +154,7 @@ export const projects: Project[] = [
     src: shoppingmall,
     description:
       "Stay at Aqua Suites, a luxury hotel in Bangkok, Thailand, blending coastal serenity with urban sophistication. Enjoy modern design, fine dining, and eco-friendly amenities.",
+    alt: "Seoul's most popular department store with a modern design",
   },
 ];
 

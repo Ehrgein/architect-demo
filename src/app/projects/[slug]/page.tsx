@@ -110,41 +110,35 @@ async function ProjectPage({ params }: { params: Promise<{ slug: string }> }) {
               alt="hi"
             />
           </div>
-          <div className="pt-36">
-            <ProjectAbout
-              about_header={about_header}
-              about_paragraph={about_paragraph}
-              location={location}
-              type={type}
-              year={year}
-            />
-          </div>
+
+          <ProjectAbout
+            about_header={about_header}
+            about_paragraph={about_paragraph}
+            location={location}
+            type={type}
+            year={year}
+          />
+
           <div className="pt-36">
             <ParallaxImage src={villa1} width={"w-full"} height={"h-[900px]"} />
           </div>
-          <div className="w-full grid grid-cols-2 gap-8 pt-36">
+          <section className="w-full grid grid-cols-2 gap-8 pt-36">
             <ParallaxImage src={villa2} height="h-[850px]" width="w-full" />
             <ParallaxImage src={villa4} height="h-[850px]" width="w-full" />
-          </div>
-          <div className="pt-36">
-            <StickyDescription src={port1} project_details={project_details} />
-          </div>
-          <div className="pt-36">
-            <div className="w-full grid grid-cols-2 gap-8 pt-36">
-              <ParallaxImage src={villa2} height="h-[1000px]" width="w-full" />
-              <ParallaxImage src={villa4} height="h-[1000px]" width="w-full" />
-            </div>
+          </section>
+          <StickyDescription src={port1} project_details={project_details} />
+          <div className="w-full grid grid-cols-2 gap-8 pt-36">
+            <ParallaxImage src={villa2} height="h-[1000px]" width="w-full" />
+            <ParallaxImage src={villa4} height="h-[1000px]" width="w-full" />
           </div>
           <div className="pt-36">
             <ParallaxImage src={land2} height="h-[950px]" width="w-full" />
           </div>
-          <div className="pt-36">
-            <NextProject
-              nextSlug={nextSlug}
-              nextTitle={nextTitle}
-              nextSrc={nextImage}
-            />
-          </div>
+          <NextProject
+            nextSlug={nextSlug}
+            nextTitle={nextTitle}
+            nextSrc={nextImage}
+          />
         </div>
       </div>
     </>

@@ -4,6 +4,7 @@ import NavProject from "./components/Layout/NavProject";
 import AboutUs from "./components/ui/AboutUs";
 import Hero from "./components/Layout/Hero";
 import Services from "./components/ui/Services";
+import Contact from "./components/Layout/Contact";
 
 export default function Home() {
   return (
@@ -20,11 +21,12 @@ export default function Home() {
             src="/proyects.jpg"
             className="w-full h-full object-cover"
             fill
-            alt="hi"
+            alt="Modern house full width image"
           />
         </div>
       </section>
       <Projects />
+      <Contact />
     </>
   );
 }

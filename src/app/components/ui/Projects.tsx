@@ -21,6 +21,7 @@ function ProjectItem() {
                 <Image
                   src={src}
                   className="w-full h-full object-cover"
+                  sizes="(max-width: 1920px) 1200px"
                   fill
                   alt="hi"
                 />
