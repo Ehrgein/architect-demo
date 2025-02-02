@@ -29,7 +29,12 @@ function StickyDescription({
             </div>
           </div>
           <div className="relative col-start-5 -col-end-1 w-full h-[1000px]">
-            <ParallaxImage src={src} width="w-full" height="h-full" />
+            <ParallaxImage
+              sizes="(max-width: 1920px) 40vw"
+              src={src}
+              width="w-full"
+              height="h-full"
+            />
           </div>
         </div>
       </div>

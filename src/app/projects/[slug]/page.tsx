@@ -100,12 +100,12 @@ async function ProjectPage({ params }: { params: Promise<{ slug: string }> }) {
           <div className="w-fulll h-[750px] relative">
             <Image
               src={src}
+              sizes="(max-width: 1920px) 90vw"
               className="w-full h-full object-cover"
               fill
               alt="hi"
             />
           </div>
-
           <ProjectAbout
             about_header={about_header}
             about_paragraph={about_paragraph}
@@ -113,28 +113,53 @@ async function ProjectPage({ params }: { params: Promise<{ slug: string }> }) {
             type={type}
             year={year}
           />
-
           <div className="pt-36">
             <ParallaxImage
+              sizes="(max-width: 1920px) 90vw"
               src={images[0]}
               width={"w-full"}
               height={"h-[900px]"}
             />
           </div>
           <section className="w-full grid grid-cols-2 gap-8 pt-36">
-            <ParallaxImage src={images[1]} height="h-[850px]" width="w-full" />
-            <ParallaxImage src={images[2]} height="h-[850px]" width="w-full" />
+            <ParallaxImage
+              sizes="(max-width: 1920px) 50vw"
+              src={images[1]}
+              height="h-[850px]"
+              width="w-full"
+            />
+            <ParallaxImage
+              sizes="(max-width: 1920px) 50vw"
+              src={images[2]}
+              height="h-[850px]"
+              width="w-full"
+            />
           </section>
           <StickyDescription
             src={images[3]}
             project_details={project_details}
           />
           <div className="w-full grid grid-cols-2 gap-8 pt-36">
-            <ParallaxImage src={images[4]} height="h-[1000px]" width="w-full" />
-            <ParallaxImage src={images[5]} height="h-[1000px]" width="w-full" />
+            <ParallaxImage
+              sizes="(max-width: 1920px) 50vw"
+              src={images[4]}
+              height="h-[1000px]"
+              width="w-full"
+            />
+            <ParallaxImage
+              sizes="(max-width: 1920px) 50vw"
+              src={images[5]}
+              height="h-[1000px]"
+              width="w-full"
+            />
           </div>
           <div className="pt-36">
-            <ParallaxImage src={images[6]} height="h-[950px]" width="w-full" />
+            <ParallaxImage
+              sizes="(max-width: 1920px) 90vw"
+              src={images[6]}
+              height="h-[950px]"
+              width="w-full"
+            />
           </div>
           <NextProject
             nextSlug={nextSlug}

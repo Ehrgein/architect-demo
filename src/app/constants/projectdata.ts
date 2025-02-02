@@ -1,52 +1,5 @@
 import { StaticImageData } from "next/image";
-import villa1 from "../../../public/villa1.jpg";
-import villa2 from "../../../public/villa2.jpg";
-import villa3 from "../../../public/villa3.jpg";
-import villa4 from "../../../public/villa4.jpg";
-import villa5 from "../../../public/newcapesolis.jpg";
-import shoppingmall from "../../../public/seoulstore.jpg";
-import sysyphus1 from "../../../public/timbersk1.jpg";
-import sysyphus2 from "../../../public/timbersk2.jpg";
-import sysyphus3 from "../../../public/timbersk3.jpg";
-import sysyphus4 from "../../../public/timbersk4.jpg";
-import sysyphus5 from "../../../public/timbersk5.jpg";
-import sysyphus6 from "../../../public/timbersk6.jpg";
-import sysyphus7 from "../../../public/timbersk7.jpg";
-import oceanparadise1 from "../../../public/oceanparadise1.jpg";
-import oceanparadise2 from "../../../public/oceanparadise2.jpg";
-import oceanparadise3 from "../../../public/oceanparadise3.jpg";
-import oceanparadise4 from "../../../public/oceanparadise4.jpg";
-import oceanparadise5 from "../../../public/oceanparadise5.jpg";
-import oceanparadise6 from "../../../public/oceanparadise6.jpg";
-import oceanparadise7 from "../../../public/oceanparadise7.jpg";
-import alajuela1 from "../../../public/alajuela1.jpg";
-import alajuela2 from "../../../public/alajuela2.jpg";
-import alajuela3 from "../../../public/alajuela3.jpg";
-import alajuela4 from "../../../public/alajuela4.jpg";
-import alajuela5 from "../../../public/alajuela5.jpg";
-import alajuela6 from "../../../public/alajuela6.jpg";
-import alajuela7 from "../../../public/alajuela7.jpg";
-import solis1 from "../../../public/solis1.jpg";
-import solis2 from "../../../public/solis2.jpg";
-import solis3 from "../../../public/solis3.jpg";
-import solis4 from "../../../public/solis4.jpg";
-import solis5 from "../../../public/solis5.jpg";
-import solis6 from "../../../public/solis6.jpg";
-import solis7 from "../../../public/solis7.jpg";
-import aqua1 from "../../../public/aqua1.jpg";
-import aqua2 from "../../../public/aqua2.jpg";
-import aqua3 from "../../../public/aqua3.jpg";
-import aqua4 from "../../../public/aqua4.jpg";
-import aqua5 from "../../../public/aqua5.jpg";
-import aqua6 from "../../../public/aqua6.jpg";
-import aqua7 from "../../../public/aqua7.jpg";
-import hyundai1 from "../../../public/hyundai1.jpg";
-import hyundai2 from "../../../public/hyundai2.jpg";
-import hyundai3 from "../../../public/hyundai3.jpg";
-import hyundai4 from "../../../public/hyundai4.jpg";
-import hyundai5 from "../../../public/hyundai5.jpg";
-import hyundai6 from "../../../public/hyundai6.jpg";
-import hyundai7 from "../../../public/hyundai7.jpg";
+import { images } from "../assets/images";
 
 export type Project = {
   id: number;
@@ -85,16 +38,8 @@ export const projects: Project[] = [
     ],
     description:
       "Discover Ocean Paradise, a luxurious country club in Bali, Indonesia, blending Balinese charm with modern elegance. Enjoy ocean views, world-class amenities, and sustainable luxury.",
-    src: villa1,
-    images: [
-      oceanparadise1,
-      oceanparadise2,
-      oceanparadise3,
-      oceanparadise4,
-      oceanparadise5,
-      oceanparadise6,
-      oceanparadise7,
-    ],
+    src: images.villa1,
+    images: images.oceanparadise,
     alt: "Image of a country club with a pool",
   },
   {
@@ -114,16 +59,8 @@ export const projects: Project[] = [
       "The home is equipped with luxurious amenities, including an infinity pool, a private gym, and a spacious outdoor living area perfect for entertaining. Every aspect of the residence was designed with relaxation and functionality in mind.",
       "Sustainability was a key consideration in the construction, with energy-efficient systems, rainwater collection, and the use of locally sourced materials. The residence showcases how luxury can coexist with environmental consciousness.",
     ],
-    src: villa2,
-    images: [
-      alajuela1,
-      alajuela2,
-      alajuela3,
-      alajuela4,
-      alajuela5,
-      alajuela6,
-      alajuela7,
-    ],
+    src: images.villa2,
+    images: images.alajuela,
     description:
       "Explore Alajuela, a private residence in Costa Rica offering stunning views, modern design, and sustainable luxury. A serene retreat in the heart of nature.",
     alt: "Modern luxury home in Costa Rica",
@@ -145,16 +82,8 @@ export const projects: Project[] = [
       "Sysyphus boasts world-class amenities, including a serene infinity pool overlooking the Aegean, a gourmet restaurant serving Mediterranean delicacies, and a wellness spa offering traditional Greek treatments.",
       "Dedicated to sustainability, the resort incorporates solar energy, water conservation systems, and eco-friendly materials into its operations. Sysyphus ensures that guests enjoy luxury while preserving the pristine beauty of Paros.",
     ],
-    src: villa3,
-    images: [
-      sysyphus1,
-      sysyphus2,
-      sysyphus3,
-      sysyphus4,
-      sysyphus5,
-      sysyphus6,
-      sysyphus7,
-    ],
+    src: images.villa3,
+    images: images.sysyphus,
     description:
       "Experience Sysyphus Luxury Resort in Paros, Greece. Enjoy Cycladic elegance, breathtaking Aegean views, and sustainable luxury. A perfect island retreat.",
     alt: "Luxury resort in Paros facing the sea",
@@ -176,8 +105,8 @@ export const projects: Project[] = [
       "Guests can enjoy a rooftop infinity pool, a state-of-the-art fitness center, and fine dining experiences featuring both Thai and international cuisine. Aqua Suites is designed to cater to both leisure and business travelers.",
       "Sustainability is integral to Aqua Suites, with eco-friendly practices such as energy-efficient lighting, water recycling systems, and green rooftop gardens. The hotel exemplifies how luxury accommodations can prioritize environmental responsibility.",
     ],
-    src: villa5,
-    images: [solis1, solis2, solis3, solis4, solis5, solis6, solis7],
+    src: images.villa5,
+    images: images.solis,
     description:
       "Stay at Aqua Suites, a luxury hotel in Bangkok, Thailand, blending coastal serenity with urban sophistication. Enjoy modern design, fine dining, and eco-friendly amenities.",
     alt: "Private luxury villa near Cape Town's beaches",
@@ -199,8 +128,8 @@ export const projects: Project[] = [
       "Guests can enjoy a rooftop infinity pool, a state-of-the-art fitness center, and fine dining experiences featuring both Thai and international cuisine. Aqua Suites is designed to cater to both leisure and business travelers.",
       "Sustainability is integral to Aqua Suites, with eco-friendly practices such as energy-efficient lighting, water recycling systems, and green rooftop gardens. The hotel exemplifies how luxury accommodations can prioritize environmental responsibility.",
     ],
-    src: villa4,
-    images: [aqua1, aqua2, aqua3, aqua4, aqua5, aqua6, aqua7],
+    src: images.villa4,
+    images: images.aqua,
     description:
       "Stay at Aqua Suites, a luxury hotel in Bangkok, Thailand, blending coastal serenity with urban sophistication. Enjoy modern design, fine dining, and eco-friendly amenities.",
     alt: "Luxury hotel with palm trees and a pool facing you",
@@ -222,16 +151,8 @@ export const projects: Project[] = [
       "Guests can enjoy a rooftop infinity pool, a state-of-the-art fitness center, and fine dining experiences featuring both Thai and international cuisine. Aqua Suites is designed to cater to both leisure and business travelers.",
       "Sustainability is integral to Aqua Suites, with eco-friendly practices such as energy-efficient lighting, water recycling systems, and green rooftop gardens. The hotel exemplifies how luxury accommodations can prioritize environmental responsibility.",
     ],
-    src: shoppingmall,
-    images: [
-      hyundai1,
-      hyundai2,
-      hyundai3,
-      hyundai4,
-      hyundai5,
-      hyundai6,
-      hyundai7,
-    ],
+    src: images.shoppingmall,
+    images: images.aqua,
     description:
       "Stay at Aqua Suites, a luxury hotel in Bangkok, Thailand, blending coastal serenity with urban sophistication. Enjoy modern design, fine dining, and eco-friendly amenities.",
     alt: "Seoul's most popular department store with a modern design",
@@ -243,21 +164,21 @@ export const projectsTwo = [
     title: "Ocean",
     subtitle: "Paradise",
     type: "Country Club",
-    src: villa1,
+    src: images.villa1,
   },
   {
     title: "Alajuela",
     type: "Residencia Privada",
-    src: villa2,
+    src: images.villa2,
   },
   {
     title: "Sysyphus",
     type: "Hotel Resort",
-    src: villa3,
+    src: images.villa3,
   },
   {
     title: "Aqua Suites",
     type: "Luxury Hotel",
-    src: villa4,
+    src: images.villa4,
   },
 ];

@@ -27,7 +27,12 @@ function NextProject({
         </div>
         <div className="pt-10">
           <ResetLenisLink href={`/projects/${nextSlug}`}>
-            <ParallaxImage src={nextSrc} height="h-[650px]" width="w-full" />
+            <ParallaxImage
+              sizes="(max-width: 1920px) 90vw"
+              src={nextSrc}
+              height="h-[650px]"
+              width="w-full"
+            />
           </ResetLenisLink>
         </div>
       </section>

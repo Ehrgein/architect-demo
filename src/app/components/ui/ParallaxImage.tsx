@@ -7,9 +7,10 @@ type Dimensions = {
   width: "w-1/2" | "w-1/4" | "w-full";
   height: string;
   src: StaticImageData;
+  sizes: string;
 };
 
-function ParallaxImage({ height, width, src }: Dimensions) {
+function ParallaxImage({ height, width, src, sizes }: Dimensions) {
   const ref = React.useRef<HTMLDivElement>(null);
 
   const { scrollYProgress } = useScroll({
@@ -27,6 +28,7 @@ function ParallaxImage({ height, width, src }: Dimensions) {
             <Image
               src={src}
               fill
+              sizes={sizes}
               alt="Parallax Effect"
               className="object-cover w-full h-full"
             />

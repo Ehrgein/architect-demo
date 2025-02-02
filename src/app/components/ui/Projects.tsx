@@ -4,6 +4,7 @@ import Image from "next/image";
 import { projects } from "@/app/constants/projectdata";
 import { motion } from "motion/react";
 import Link from "next/link";
+import ResetLenisLink from "@/app/helpers/ResetLenisLink";
 
 function ProjectItem() {
   return (
@@ -11,7 +12,7 @@ function ProjectItem() {
       {projects.map(({ title, type, src, slug }) => (
         <div key={title}>
           <div className="w-full h-[650px] relative overflow-hidden origin-center">
-            <Link href={`/projects/${slug}`}>
+            <ResetLenisLink href={`/projects/${slug}`}>
               <motion.div
                 initial={{ scale: 1 }}
                 whileHover={{ scale: 1.05 }}
@@ -26,7 +27,7 @@ function ProjectItem() {
                   alt="hi"
                 />
               </motion.div>
-            </Link>
+            </ResetLenisLink>
           </div>
           <p className="text-lg text-black-light tracking-tight pt-4 uppercase">
             {title}
