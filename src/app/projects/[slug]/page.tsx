@@ -3,16 +3,10 @@ import React from "react";
 import ProjectAbout from "../../components/ui/ProjectAbout";
 import ParallaxImage from "../../components/ui/ParallaxImage";
 import StickyDescription from "../../components/ui/StickyDescription";
-import villa1 from "../../../../public/villa1.jpg";
-import villa2 from "../../../../public/villa2.jpg";
-import villa4 from "../../../../public/land1.jpg";
 import port1 from "../../../../public/port1.jpg";
-import land2 from "../../../../public/land2.jpg";
-import Footer from "../../components/Layout/Footer";
 import NextProject from "../../components/Layout/NextProject";
 import NavProject from "@/app/components/Layout/NavProject";
 import { projects } from "@/app/constants/projectdata";
-import next, { Metadata } from "next";
 
 export async function generateMetadata({
   params,
@@ -83,6 +77,7 @@ async function ProjectPage({ params }: { params: Promise<{ slug: string }> }) {
     project_details,
     src,
     id,
+    images,
   } = project;
 
   // const nextSlug = projects[id % projects.length].slug;
@@ -120,19 +115,26 @@ async function ProjectPage({ params }: { params: Promise<{ slug: string }> }) {
           />
 
           <div className="pt-36">
-            <ParallaxImage src={villa1} width={"w-full"} height={"h-[900px]"} />
+            <ParallaxImage
+              src={images[0]}
+              width={"w-full"}
+              height={"h-[900px]"}
+            />
           </div>
           <section className="w-full grid grid-cols-2 gap-8 pt-36">
-            <ParallaxImage src={villa2} height="h-[850px]" width="w-full" />
-            <ParallaxImage src={villa4} height="h-[850px]" width="w-full" />
+            <ParallaxImage src={images[1]} height="h-[850px]" width="w-full" />
+            <ParallaxImage src={images[2]} height="h-[850px]" width="w-full" />
           </section>
-          <StickyDescription src={port1} project_details={project_details} />
+          <StickyDescription
+            src={images[3]}
+            project_details={project_details}
+          />
           <div className="w-full grid grid-cols-2 gap-8 pt-36">
-            <ParallaxImage src={villa2} height="h-[1000px]" width="w-full" />
-            <ParallaxImage src={villa4} height="h-[1000px]" width="w-full" />
+            <ParallaxImage src={images[4]} height="h-[1000px]" width="w-full" />
+            <ParallaxImage src={images[5]} height="h-[1000px]" width="w-full" />
           </div>
           <div className="pt-36">
-            <ParallaxImage src={land2} height="h-[950px]" width="w-full" />
+            <ParallaxImage src={images[6]} height="h-[950px]" width="w-full" />
           </div>
           <NextProject
             nextSlug={nextSlug}

@@ -3,21 +3,34 @@ import React from "react";
 import Image from "next/image";
 import { motion } from "motion/react";
 
-import { slowStartQuickEnd, menuOpen } from "@/app/helpers/beziers";
-
 function Hero() {
+  const text =
+    "Shaping spaces with creativity, precision, and bringing architectural visions to life";
+
   return (
     <>
       <div className="mt-48 px-8">
         <div className="overflow-hidden">
-          <motion.h2
-            initial={{ y: "100%" }}
-            animate={{ y: "0%" }}
-            transition={{ ease: "easeInOut" }}
-            className="text-black-pure text-7xl w-[80%] leading-snug"
-          >
-            Shaping spaces with creativity, precision, and bringing
-            architectural visions to life.
+          <motion.h2 className="text-black-pure text-7xl w-[80%] leading-snug">
+            {text.split(" ").map((word, index) => {
+              return (
+                <motion.span
+                  key={crypto.randomUUID()}
+                  initial={{ y: "200%" }}
+                  animate={{ y: "0%" }}
+                  transition={{
+                    duration: 1.3,
+                    ease: [0.25, 0.1, 0.25, 1],
+                    delay: index * 0.005,
+                  }}
+                  className="inline-block"
+                >
+                  <motion.span className="inline-block">
+                    {word}&nbsp;
+                  </motion.span>
+                </motion.span>
+              );
+            })}
           </motion.h2>
         </div>
       </div>
