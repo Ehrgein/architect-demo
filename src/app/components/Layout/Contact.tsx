@@ -8,15 +8,17 @@ function Contact() {
   const [isAnimated, setisAnimated] = React.useState(false);
 
   return (
-    <section className="px-4 pt-20 md:px-8 pb-10 md:pb-0 h-full grid grid-cols-1 md:grid-cols-2 md:pt-40 md:mb-40">
-      <div className="relative h-[500px] md:h-[900px]">
-        <Image
-          src="/contactimg.jpg"
-          className="h-full object-cover"
-          alt="contactimage"
-          fill
-          sizes="(max-width: 1920px) 900px"
-        />
+    <section className="px-4 pt-20 md:px-8 pb-10 md:pb-0 grid grid-cols-1 md:grid-cols-2 md:pt-40 md:mb-40">
+      <div>
+        <div className="relative h-[500px] md:h-[900px]">
+          <Image
+            src="/contactimg.jpg"
+            className="h-full object-cover"
+            alt="contactimage"
+            fill
+            sizes="(max-width: 1920px) 900px"
+          />
+        </div>
       </div>
       <div className="pt-6 md:pt-0 px-0 md:px-2 md:pl-14 space-y-5 md:space-y-8">
         <h3 className="text-4xl md:text-5xl text-black-light">CONTACT US</h3>
