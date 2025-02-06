@@ -36,7 +36,7 @@ function Services() {
         <div className="grid grid-cols-3 gap-6 pt-12">
           {services.map(({ title, content, src, alt }) => (
             <article key={title} className="space-y-5">
-              <div className="relative w-full h-[750px]">
+              <div className="relative w-full h-[650px]">
                 <Image
                   src={src}
                   alt={alt}
