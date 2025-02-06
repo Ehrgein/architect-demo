@@ -11,7 +11,7 @@ function ProjectItem() {
     <>
       {projects.map(({ title, type, src, slug }) => (
         <div key={title}>
-          <div className="w-full h-[650px] relative overflow-hidden origin-center">
+          <div className="w-full h-[500px] md:h-[650px] relative overflow-hidden origin-center">
             <ResetLenisLink href={`/projects/${slug}`}>
               <motion.div
                 initial={{ scale: 1 }}
@@ -44,11 +44,11 @@ function ProjectItem() {
 export function Projects() {
   return (
     <>
-      <div className="flex items-center px-8">
+      <div className="flex items-center px-4 md:px-8">
         <h2 className="text-5xl font-medium text-black-light">OUR WORK</h2>
       </div>
       {/* <ProjectTitle /> */}
-      <div className="w-full grid grid-cols-3 px-8 gap-8 pt-12">
+      <div className="w-full grid grid-cols-1 md:grid-cols-3 px-4 md:px-8 gap-8 py-12">
         <ProjectItem />
       </div>
     </>

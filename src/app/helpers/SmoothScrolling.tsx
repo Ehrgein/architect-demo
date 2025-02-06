@@ -10,10 +10,12 @@ function SmoothScrolling({ children }: { children: React.ReactNode }) {
   const lenis = useLenis();
 
   React.useEffect(() => {
+    //required to stop lenis when pathname changes as otherwise window y value is kept.
     if (lenis) {
       lenis.stop();
     }
 
+    // when visiting a new page, it will restart lenis and go to the top.
     const handleScrollToTop = () => {
       if (lenis) {
         lenis.start();

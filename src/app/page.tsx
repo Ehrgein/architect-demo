@@ -15,7 +15,7 @@ export default function Home() {
       <NavProject />
       <AboutUs />
       <Services />
-      <section className="pt-40 pb-40">
+      <section className="py-24 md:py-40">
         <div className="w-full h-[900px] relative">
           <Image
             src="/proyects.jpg"

@@ -23,7 +23,7 @@ export default function RootLayout({
       <body className={`antialiased bg-[#E5DCD8]`}>
         <SmoothScrolling>
           {children}
-          <Footer />
+          {/* <Footer /> */}
         </SmoothScrolling>
       </body>
     </html>

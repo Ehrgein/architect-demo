@@ -54,7 +54,7 @@ function Footer() {
         <ContactUsBtn />
       </div>
       <div className="pt-20 flex items-center justify-between">
-        <h5 className="text-[13rem] text-[#262626] font-bold -ml-2 leading-none">
+        <h5 className="text-lg md:text-[13rem] text-[#262626] font-bold -ml-2 leading-none">
           Y STUDIO
         </h5>
         <div

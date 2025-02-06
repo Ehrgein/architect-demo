@@ -8,8 +8,8 @@ function Hero() {
 
   return (
     <>
-      <div className="mt-48 px-8">
-        <div className="overflow-hidden">
+      <div className="mt-24 md:mt-48 px-4 md:px-8">
+        <div className="overflow-hidden ">
           {/* <motion.h2 className="text-black-pure text-7xl w-[80%] leading-snug">
             {text.split(" ").map((word, index) => {
               return (
@@ -31,20 +31,20 @@ function Hero() {
               );
             })}
           </motion.h2> */}
-          <h2 className="text-black-pure text-7xl w-[80%] leading-snug">
+          <h2 className="text-black-pure text-3xl md:text-7xl w-full md:w-[80%] leading-normal md:leading-snug">
             Shaping spaces with creativity, precision, and bringing
             architectural visions to life
           </h2>
         </div>
       </div>
-      <div className="w-full pt-20 px-8">
+      <div className="w-full pt-8 md:pt-20 px-4 md:px-8">
         <div className="h-[900px] relative">
           <Image
             src="/optabout.jpg"
             fill
             className="object-cover"
             alt="hi"
-            sizes="(max-width:2000px) 85vw"
+            sizes="(max-width: 500px) 100vw, (max-width: 2000px) 85vw, 85vw"
             priority
           />
         </div>

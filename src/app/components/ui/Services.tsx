@@ -30,13 +30,13 @@ const services = [
 
 function Services() {
   return (
-    <section className="py-36 px-8">
+    <section className="pt-16 md:py-36 px-4 md:px-8">
       <div className="pt-20">
         <h3 className="text-5xl font-medium text-black-light">OUR SERVICES</h3>
-        <div className="grid grid-cols-3 gap-6 pt-12">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-16 md:gap-6 pt-12">
           {services.map(({ title, content, src, alt }) => (
-            <article key={title} className="space-y-5">
-              <div className="relative w-full h-[650px]">
+            <article key={title} className="space-y-2 md:space-y-5 md:pt-0">
+              <div className="relative w-full h-[350px] md:h-[650px]">
                 <Image
                   src={src}
                   alt={alt}
@@ -44,7 +44,9 @@ function Services() {
                   fill
                 />
               </div>
-              <h4 className="text-3xl text-black-light pt-3">{title}</h4>
+              <h4 className="text-2xl md:text-3xl text-black-light pt-6 md:pt-3">
+                {title}
+              </h4>
               <p className="pr-3 pt-1 leading-7 text-black-mediumLight">
                 {content}
               </p>

@@ -8,8 +8,8 @@ function Contact() {
   const [isAnimated, setisAnimated] = React.useState(false);
 
   return (
-    <section className="px-8 h-full grid grid-cols-2 pt-40 mb-40">
-      <div className="relative h-[900px]">
+    <section className="px-4 pt-20 md:px-8 pb-10 md:pb-0 h-full grid grid-cols-1 md:grid-cols-2 md:pt-40 md:mb-40">
+      <div className="relative h-[500px] md:h-[900px]">
         <Image
           src="/contactimg.jpg"
           className="h-full object-cover"
@@ -18,14 +18,14 @@ function Contact() {
           sizes="(max-width: 1920px) 900px"
         />
       </div>
-      <div className="pl-14 space-y-8">
-        <h3 className="text-5xl text-black-light">CONTACT US</h3>
-        <p className=" w-[65ch] text-black-mediumLight leading-relaxed">
+      <div className="pt-6 md:pt-0 px-0 md:px-2 md:pl-14 space-y-5 md:space-y-8">
+        <h3 className="text-4xl md:text-5xl text-black-light">CONTACT US</h3>
+        <p className="w-full md:w-[65ch] text-black-mediumLight leading-relaxed">
           If you have any questions or would like to learn more about our
           process, please don't hesitate to reach out.
         </p>
-        <form className="w-4/5 pt-12 space-y-12">
-          <div className="space-y-2">
+        <form className="w-full space-y-8 md:w-4/5 pt-6 md:pt-12 md:space-y-12">
+          <div className="space-y-1 md:space-y-2">
             <label className="text-black-dark" htmlFor="name">
               Name
             </label>
@@ -39,8 +39,8 @@ function Contact() {
             />
             <AnimatedBorder delay={0.2} />
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-            <div className="space-y-2">
+          <div className="md:grid md:grid-cols-2 md:gap-4">
+            <div className="space-y-1 md:space-y-2">
               <label className="text-black-dark" htmlFor="email">
                 Email
               </label>
@@ -54,7 +54,7 @@ function Contact() {
               />
               <AnimatedBorder delay={0.2} />
             </div>
-            <div className="space-y-2">
+            <div className="pt-8 md:pt-0 space-y-1 md:space-y-2">
               <label className="text-black-dark" htmlFor="tel">
                 Phone
               </label>
