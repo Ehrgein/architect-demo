@@ -32,7 +32,7 @@ function ProjectItem() {
           <p className="text-lg text-black-light tracking-tight pt-4 uppercase">
             {title}
           </p>
-          <p className="text-black-light opacity-60 capitalize text-[13px] pt-1">
+          <p className="text-black-light opacity-60 capitalize text-[13px] pt-[2px] md:pt-1">
             {type}
           </p>
         </div>
