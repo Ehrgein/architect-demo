@@ -152,7 +152,7 @@ export const projects: Project[] = [
       "Sustainability is integral to Aqua Suites, with eco-friendly practices such as energy-efficient lighting, water recycling systems, and green rooftop gardens. The hotel exemplifies how luxury accommodations can prioritize environmental responsibility.",
     ],
     src: images.shoppingmall,
-    images: images.aqua,
+    images: images.hyundai,
     description:
       "Stay at Aqua Suites, a luxury hotel in Bangkok, Thailand, blending coastal serenity with urban sophistication. Enjoy modern design, fine dining, and eco-friendly amenities.",
     alt: "Seoul's most popular department store with a modern design",

@@ -99,10 +99,11 @@ async function ProjectPage({ params }: { params: Promise<{ slug: string }> }) {
             subtype={subtype}
             location={location}
           />
-          <div className="w-fulll h-[750px] relative">
+          <div className="w-full h-[750px] relative">
             <Image
               src={src}
-              sizes="(max-width: 768px) 95vw, (max-width: 1920px) 90vw"
+              priority
+              sizes="(max-width: 1920px) 90vw"
               className="w-full h-full object-cover"
               fill
               alt="hi"

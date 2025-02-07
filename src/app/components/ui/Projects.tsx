@@ -7,17 +7,12 @@ import { motion } from "motion/react";
 import TransitionLink from "@/app/helpers/TransitionLink";
 
 function ProjectItem() {
-  const [isExiting, setIsExiting] = React.useState<boolean>(false);
-
   return (
     <>
       {projects.map(({ title, type, src, slug }) => (
         <div key={title}>
           <div className="w-full h-[500px] md:h-[650px] xl:h-[550px] relative overflow-hidden origin-center">
-            <TransitionLink
-              setIsExiting={setIsExiting}
-              href={`/projects/${slug}`}
-            >
+            <TransitionLink href={`/projects/${slug}`}>
               <motion.div
                 initial={{ scale: 1 }}
                 whileHover={{ scale: 1.05 }}
@@ -27,7 +22,7 @@ function ProjectItem() {
                 <Image
                   src={src}
                   className="w-full h-full object-cover"
-                  sizes="(max-width: 1920px) 1200px"
+                  sizes="(max-width: 1920px) 45vw"
                   fill
                   alt="hi"
                 />

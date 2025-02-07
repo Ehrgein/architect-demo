@@ -9,14 +9,11 @@ async function sleep(ms: number): Promise<void> {
 interface TransitionLinkProps extends LinkProps {
   children: React.ReactNode;
   href: string;
-  isExiting?: boolean;
-  setIsExiting: React.Dispatch<SetStateAction<boolean>>;
 }
 
 export const TransitionLink: React.FC<TransitionLinkProps> = ({
   href,
   children,
-  setIsExiting,
   ...props
 }) => {
   const router = useRouter();
@@ -24,15 +21,13 @@ export const TransitionLink: React.FC<TransitionLinkProps> = ({
   const handleTransition = async (
     e: React.MouseEvent<HTMLAnchorElement, MouseEvent>
   ) => {
-    e.preventDefault();
+    // e.preventDefault();
 
     if (href === "pathname") {
       return;
     }
 
-    setIsExiting(true);
-
-    await sleep(1000);
+    // await sleep(450);
 
     router.push(`${href}`);
   };

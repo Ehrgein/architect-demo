@@ -16,11 +16,11 @@ function Contact() {
       <div>
         <div className="relative h-[500px] md:h-full desktop:h-[900px] xl:full">
           <Image
-            src="/contactimg.jpg"
+            src="/contact.jpg"
             className="h-full object-cover"
             alt="contactimage"
             fill
-            sizes="(max-width: 1920px) 900px"
+            sizes="(max-width: 1920px) 60vw"
           />
         </div>
       </div>

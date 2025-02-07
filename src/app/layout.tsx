@@ -3,6 +3,7 @@ import "./globals.css";
 import SmoothScrolling from "./helpers/SmoothScrolling";
 import Footer from "./components/Layout/Footer";
 import NavProject from "./components/Layout/NavProject";
+// import Template from "./template";
 
 const raleway = Raleway({
   variable: "--font-raleway",

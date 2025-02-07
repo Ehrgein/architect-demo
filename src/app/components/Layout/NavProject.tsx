@@ -16,7 +16,7 @@ const links = [
   },
   {
     link: "services",
-    href: "services",
+    href: "/projects/cape-solis",
   },
   {
     link: "projects",
@@ -64,7 +64,7 @@ function NavProject() {
           <ul className="hidden md:flex gap-12 pr-8">
             {["About", "Projects", "Services", "Contact"].map((item) => (
               <li key={item} className="relative group overflow-hidden">
-                <Link href={`#${item}`} className="block">
+                <Link href={`/projects/cape-solis`} className="block">
                   <p className="group-hover:-translate-y-full transition-transform duration-[350ms] ease-in-out">
                     {item}
                   </p>

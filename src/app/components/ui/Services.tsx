@@ -1,8 +1,8 @@
 import React from "react";
 import Image from "next/image";
-import commercial from "../../../../public/shopmal.jpg";
-import residential from "../../../../public/newmodernhouse.jpg";
-import rendering from "../../../../public/render.png";
+import commercial from "../../../../public/shopmall.jpg";
+import residential from "../../../../public/optimizeddmodernhouse.jpg";
+import rendering from "../../../../public/render.jpg";
 
 const services = [
   {
@@ -42,10 +42,11 @@ function Services() {
               key={title}
               className="space-y-2 md:space-y-3 lg:space-y-5 md:pt-0"
             >
-              <div className="relative w-full h-[350px] md:h-[450px] lg:h-[500px] xl:h-[550px]">
+              <div className="relative w-full h-[350px] md:h-[450px] lg:h-[500px] xl:h-[600px]">
                 <Image
                   src={src}
                   alt={alt}
+                  sizes={"(max-width: 1920px) 40vw"}
                   className="w-full h-full object-cover"
                   fill
                 />

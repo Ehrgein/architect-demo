@@ -15,7 +15,7 @@ export default function Home() {
       <AboutUs />
       <Services />
       <section className="py-24 md:py-40">
-        <div className="w-full h-[900px] relative">
+        <div className="w-full lg:h-[700px] xl:h-[900px] relative">
           <Image
             src="/proyects.jpg"
             className="w-full h-full object-cover"
