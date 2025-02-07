@@ -12,7 +12,6 @@ export default function Home() {
       {/* <EnterModal /> */}
       {/* <VideoHero /> */}
       <Hero />
-      <NavProject />
       <AboutUs />
       <Services />
       <section className="py-24 md:py-40">

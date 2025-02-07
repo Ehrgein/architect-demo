@@ -2,6 +2,7 @@ import { Raleway, Inter } from "next/font/google";
 import "./globals.css";
 import SmoothScrolling from "./helpers/SmoothScrolling";
 import Footer from "./components/Layout/Footer";
+import NavProject from "./components/Layout/NavProject";
 
 const raleway = Raleway({
   variable: "--font-raleway",
@@ -22,8 +23,9 @@ export default function RootLayout({
     <html className={`${inter.className} lang="en"`}>
       <body className={`antialiased bg-[#E5DCD8]`}>
         <SmoothScrolling>
+          <NavProject />
           {children}
-          {/* <Footer /> */}
+          <Footer />
         </SmoothScrolling>
       </body>
     </html>

@@ -14,7 +14,9 @@ function AboutUs() {
     return (
       <p
         key={index}
-        className="text-lg md:text-xl leading-loose text-black-light w-full md:w-[85%]"
+        className="text-base md:text-lg lg:text-lg 2xl:text-[1.25rem] 
+        leading-[1.8] 2xl:leading-[1.8]
+         text-black-light w-full md:w-[95%] 2xl:w-[85%]"
       >
         {para}
       </p>
@@ -22,13 +24,23 @@ function AboutUs() {
   });
 
   return (
-    <section className="pt-16 pb-8 md:pt-40 md:pb-28 px-4 md:px-8 relative grid grid-cols-1 md:grid-cols-2 w-full gap-1">
-      <div className="">
-        <h3 className="text-3xl text-black-dark text-center md:text-left font-medium leading-normal w-full md:w-[30ch] pl-0 md:pl-10">
+    <section
+      id="about-us"
+      className="pt-16 pb-8 md:pt-40 md:pb-28 lg:pt-28 lg:pb-20 xl:pt-28 
+      px-4 md:px-8 lg:px-7 xl:px-4 
+      relative grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 desktop:grid-cols-2 w-full gap-1"
+    >
+      <div className="w-full">
+        <h3
+          className="text-3xl md:text-[1.5rem] lg:text-2xl xl:text-3xl 2xl:text-3xl text-black-dark text-left lg:text-left font-medium 
+          leading-[1.6] lg:leading-relaxed xl:leading-relaxed 2xl:leading-normal
+          w-full md:w-[80%] lg:w-[25ch] 2xl:w-[30ch] 
+        pl-0 lg:pl-2 xl:pl-10 desktop:pl-10"
+        >
           We design with intention, blending simplicity and depth.
         </h3>
       </div>
-      <article className="flex flex-col w-full mx-auto pt-16 md:pt-0 space-y-10">
+      <article className="flex flex-col w-full mx-auto pt-16 md:pt-1 xl:pt-4 2xl:pt-2 space-y-10">
         {Paragraphs}
       </article>
     </section>

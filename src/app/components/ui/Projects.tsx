@@ -3,16 +3,21 @@ import React from "react";
 import Image from "next/image";
 import { projects } from "@/app/constants/projectdata";
 import { motion } from "motion/react";
-import Link from "next/link";
-import ResetLenisLink from "@/app/helpers/ResetLenisLink";
+
+import TransitionLink from "@/app/helpers/TransitionLink";
 
 function ProjectItem() {
+  const [isExiting, setIsExiting] = React.useState<boolean>(false);
+
   return (
     <>
       {projects.map(({ title, type, src, slug }) => (
         <div key={title}>
-          <div className="w-full h-[500px] md:h-[650px] relative overflow-hidden origin-center">
-            <ResetLenisLink href={`/projects/${slug}`}>
+          <div className="w-full h-[500px] md:h-[650px] xl:h-[550px] relative overflow-hidden origin-center">
+            <TransitionLink
+              setIsExiting={setIsExiting}
+              href={`/projects/${slug}`}
+            >
               <motion.div
                 initial={{ scale: 1 }}
                 whileHover={{ scale: 1.05 }}
@@ -27,7 +32,7 @@ function ProjectItem() {
                   alt="hi"
                 />
               </motion.div>
-            </ResetLenisLink>
+            </TransitionLink>
           </div>
           <p className="text-lg text-black-light tracking-tight pt-4 uppercase">
             {title}
@@ -44,11 +49,18 @@ function ProjectItem() {
 export function Projects() {
   return (
     <>
-      <div className="flex items-center px-4 md:px-8">
+      <div
+        id="projects"
+        className="flex items-center px-4 md:px-8 lg:px-6 xl:px-6 desktop:px-8"
+      >
         <h2 className="text-5xl font-medium text-black-light">OUR WORK</h2>
       </div>
       {/* <ProjectTitle /> */}
-      <div className="w-full grid grid-cols-1 md:grid-cols-3 px-4 md:px-8 gap-8 py-12">
+      <div
+        className="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3 
+        px-4 md:px-8 lg:px-6 xl:px-8
+       gap-8 md:gap-8 lg:gap-7 xl:gap-6 py-12"
+      >
         <ProjectItem />
       </div>
     </>

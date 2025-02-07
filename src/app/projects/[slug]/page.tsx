@@ -45,9 +45,11 @@ function ProjectDescription({
   location: string;
 }) {
   return (
-    <div className="pt-40 pb-12">
-      <h1 className="text-[110px] pb-8 text-[#242424] font-medium">{title}</h1>
-      <div className="text-[15px] uppercase flex justify-between text-[#363636]">
+    <div className="pt-40 pb-6 md:pb-6 lg:pb-8 desktop:pb-12 lg:pt-40 xl:pt-48 desktop:pt-40">
+      <h1 className="text-[6rem] leading-tight md:text-[6.8rem] pb-4 md:pb-4 lg:pb-5 xl:pb-8 desktop:pb-8 text-[#242424] font-medium">
+        {title}
+      </h1>
+      <div className="text-[13px] md:text-[15px] uppercase flex justify-between text-[#363636]">
         <p>
           {type} - {subtype}
         </p>
@@ -90,7 +92,7 @@ async function ProjectPage({ params }: { params: Promise<{ slug: string }> }) {
     <>
       <div>
         <NavProject />
-        <div className="px-12">
+        <div className="px-4 md:px-6 lg:px-8">
           <ProjectDescription
             title={title}
             type={type}
@@ -100,7 +102,7 @@ async function ProjectPage({ params }: { params: Promise<{ slug: string }> }) {
           <div className="w-fulll h-[750px] relative">
             <Image
               src={src}
-              sizes="(max-width: 1920px) 90vw"
+              sizes="(max-width: 768px) 95vw, (max-width: 1920px) 90vw"
               className="w-full h-full object-cover"
               fill
               alt="hi"
@@ -115,7 +117,7 @@ async function ProjectPage({ params }: { params: Promise<{ slug: string }> }) {
           />
           <div className="pt-36">
             <ParallaxImage
-              sizes="(max-width: 1920px) 90vw"
+              sizes="(max-width: 768px) 95vw, (max-width: 1920px) 90vw"
               src={images[0]}
               width={"w-full"}
               height={"h-[900px]"}
@@ -123,13 +125,13 @@ async function ProjectPage({ params }: { params: Promise<{ slug: string }> }) {
           </div>
           <section className="w-full grid grid-cols-2 gap-8 pt-36">
             <ParallaxImage
-              sizes="(max-width: 1920px) 50vw"
+              sizes="(max-width: 768px) 50vw, (max-width: 1920px) 90vw"
               src={images[1]}
               height="h-[850px]"
               width="w-full"
             />
             <ParallaxImage
-              sizes="(max-width: 1920px) 50vw"
+              sizes="(max-width: 768px) 50vw, (max-width: 1920px) 90vw"
               src={images[2]}
               height="h-[850px]"
               width="w-full"
@@ -141,23 +143,23 @@ async function ProjectPage({ params }: { params: Promise<{ slug: string }> }) {
           />
           <div className="w-full grid grid-cols-2 gap-8 pt-36">
             <ParallaxImage
-              sizes="(max-width: 1920px) 50vw"
+              sizes="(max-width: 768px) 50vw, (max-width: 1920px) 90vw"
               src={images[4]}
-              height="h-[1000px]"
+              height="h-[600px] md:h-[1000px]"
               width="w-full"
             />
             <ParallaxImage
-              sizes="(max-width: 1920px) 50vw"
+              sizes="(max-width: 768px) 50vw, (max-width: 1920px) 90vw"
               src={images[5]}
-              height="h-[1000px]"
+              height="h-[600px] md:h-[1000px]"
               width="w-full"
             />
           </div>
           <div className="pt-36">
             <ParallaxImage
-              sizes="(max-width: 1920px) 90vw"
+              sizes="(max-width: 768px) 95vw, (max-width: 1920px) 90vw"
               src={images[6]}
-              height="h-[950px]"
+              height="h-[750px] md:h-[950px]"
               width="w-full"
             />
           </div>

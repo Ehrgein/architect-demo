@@ -23,14 +23,16 @@ function NextProject({
             </h4>
             <div className="bg-[#363636] h-[1px] w-full opacity-60"></div>
           </div>
-          <h2 className="uppercase text-7xl text-[#363636]">{nextTitle}</h2>
+          <h2 className="uppercase leading-tight md:leading-none text-[4.5rem] md:text-7xl text-[#363636]">
+            {nextTitle}
+          </h2>
         </div>
         <div className="pt-10">
           <ResetLenisLink href={`/projects/${nextSlug}`}>
             <ParallaxImage
               sizes="(max-width: 1920px) 90vw"
               src={nextSrc}
-              height="h-[650px]"
+              height="h-[550px] md:h-[650px]"
               width="w-full"
             />
           </ResetLenisLink>

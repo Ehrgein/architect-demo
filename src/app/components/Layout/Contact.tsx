@@ -8,9 +8,13 @@ function Contact() {
   const [isAnimated, setisAnimated] = React.useState(false);
 
   return (
-    <section className="px-4 pt-20 md:px-8 pb-10 md:pb-0 grid grid-cols-1 md:grid-cols-2 md:pt-40 md:mb-40">
+    <section
+      id="contact"
+      className="px-4 pt-20 md:px-8 lg:px-6 xl:px-8 pb-10 md:pb-0 grid grid-cols-1 md:grid-cols-2
+       md:pt-32 lg:pt-24 xl:pt-40 md:mb-40"
+    >
       <div>
-        <div className="relative h-[500px] md:h-[900px]">
+        <div className="relative h-[500px] md:h-full desktop:h-[900px] xl:full">
           <Image
             src="/contactimg.jpg"
             className="h-full object-cover"
@@ -20,13 +24,19 @@ function Contact() {
           />
         </div>
       </div>
-      <div className="pt-6 md:pt-0 px-0 md:px-2 md:pl-14 space-y-5 md:space-y-8">
-        <h3 className="text-4xl md:text-5xl text-black-light">CONTACT US</h3>
-        <p className="w-full md:w-[65ch] text-black-mediumLight leading-relaxed">
+      <div className="pt-6 md:pt-0 px-0 md:px-2 md:pl-6 lg:pl-6 xl:pl-12 space-y-5 md:space-y-8">
+        <h3 className="text-4xl md:text-4xl lg:text-5xl text-black-light">
+          CONTACT US
+        </h3>
+        <p className="w-full text-[15px] lg:text-base md:w-[95%] lg:w-[95%] 2xl:w-4/5 text-black-mediumLight leading-relaxed 2xl:leading-loose">
           If you have any questions or would like to learn more about our
           process, please don't hesitate to reach out.
         </p>
-        <form className="w-full space-y-8 md:w-4/5 pt-6 md:pt-12 md:space-y-12">
+        <form
+          className="w-full xl:w-4/5
+          pt-6 md:pt-8 lg:pt-8 xl:pt-12 desktop:pt-12 
+          space-y-8 md:space-y-10 lg:space-y-12"
+        >
           <div className="space-y-1 md:space-y-2">
             <label className="text-black-dark" htmlFor="name">
               Name

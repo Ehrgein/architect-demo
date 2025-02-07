@@ -3,14 +3,12 @@ import Image from "next/image";
 import { motion } from "motion/react";
 
 function Hero() {
-  // const text =
-  //   "Shaping spaces with creativity, precision, and bringing architectural visions to life";
-
   return (
     <>
-      <div className="mt-24 md:mt-48 px-4 md:px-8">
-        <div className="overflow-hidden ">
-          {/* <motion.h2 className="text-black-pure text-7xl w-[80%] leading-snug">
+      <div className="px-4 md:px-6 lg:px-6 2xl:px-8">
+        <div className="mt-24 md:mt-40 lg:mt-40">
+          <div className="">
+            {/* <motion.h2 className="text-black-pure text-7xl w-[80%] leading-snug">
             {text.split(" ").map((word, index) => {
               return (
                 <motion.span
@@ -31,22 +29,26 @@ function Hero() {
               );
             })}
           </motion.h2> */}
-          <h2 className="text-black-pure text-3xl md:text-7xl w-full md:w-[80%] leading-normal md:leading-snug">
-            Shaping spaces with creativity, precision, and bringing
-            architectural visions to life
-          </h2>
+            <h2
+              className="text-black-pure text-3xl md:text-5xl lg:text-5xl 2xl:text-7xl w-full md:w-full lg:w-[90%] 2xl:w-4/5
+          leading-normal md:leading-snug lg:leading-normal 2xl:leading-snug"
+            >
+              Shaping spaces with creativity, precision, and bringing
+              architectural visions to life.
+            </h2>
+          </div>
         </div>
-      </div>
-      <div className="w-full pt-8 md:pt-20 px-4 md:px-8">
-        <div className="h-[900px] relative">
-          <Image
-            src="/optabout.jpg"
-            fill
-            className="object-cover"
-            alt="hi"
-            sizes="(max-width: 500px) 100vw, (max-width: 2000px) 85vw, 85vw"
-            priority
-          />
+        <div className="w-full pt-8 md:pt-12 lg:pt-12 desktop:pt-20">
+          <div className="h-[900px] relative">
+            <Image
+              src="/optabout.jpg"
+              fill
+              className="object-cover"
+              alt="hi"
+              sizes="(max-width: 500px) 100vw, (max-width: 2000px) 85vw, 85vw"
+              priority
+            />
+          </div>
         </div>
       </div>
     </>
