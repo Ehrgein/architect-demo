@@ -1,7 +1,6 @@
 import React from "react";
 import Navbar from "./Navbar";
 import HeroText from "./HeroText";
-import NavProject from "./NavProject";
 
 function VideoHero() {
   return (
