@@ -1,6 +1,4 @@
 import React from "react";
-import { projectsTwo } from "../constants/projectdata";
-import Image from "next/image";
 import FixedNavBar from "../components/ui/FixedNavBar";
 
 function StickyTwo() {
@@ -9,7 +7,7 @@ function StickyTwo() {
       <FixedNavBar />
       <section className="relative">
         <div className="w-full h-full">
-          <div className="flex flex-col w-full relative">
+          {/* <div className="flex flex-col w-full relative">
             {projectsTwo.map((project) => {
               return (
                 <div key={project.title} className="sticky top-0">
@@ -39,7 +37,7 @@ function StickyTwo() {
                 </div>
               );
             })}
-          </div>
+          </div> */}
         </div>
       </section>
     </>

@@ -6,7 +6,6 @@ import StickyDescription from "../../components/ui/StickyDescription";
 import NextProject from "../../components/Layout/NextProject";
 import NavProject from "@/app/components/Layout/NavProject";
 import { projects } from "@/app/constants/projectdata";
-import TwoColumnParallaxImage from "@/app/components/ui/TwoColumnParallaxImage";
 
 export async function generateMetadata({
   params,
