@@ -159,26 +159,41 @@ export const projects: Project[] = [
   },
 ];
 
-export const projectsTwo = [
-  {
-    title: "Ocean",
-    subtitle: "Paradise",
-    type: "Country Club",
-    src: images.villa1,
-  },
-  {
-    title: "Alajuela",
-    type: "Residencia Privada",
-    src: images.villa2,
-  },
-  {
-    title: "Sysyphus",
-    type: "Hotel Resort",
-    src: images.villa3,
-  },
-  {
-    title: "Aqua Suites",
-    type: "Luxury Hotel",
-    src: images.villa4,
-  },
-];
+// export const projectsGallery = [
+//   {
+//     title: "Ocean Paradise",
+//     type: "Country Club",
+//     slug: "ocean-paradise",
+//     src: images.oceancover,
+//   },
+//   {
+//     title: "Alajuela",
+//     type: "Private Villa",
+//     slug: "alajuela",
+//     src: images.alajuelacover,
+//   },
+//   {
+//     title: "Sysyphus",
+//     type: "Luxury Resort",
+//     slug: "sysyphus",
+//     src: images.sysyphus,
+//   },
+//   {
+//     title: "Cape Solis",
+//     type: "Private Villa",
+//     slug: "cape-solis",
+//     src: images.soliscover,
+//   },
+//   {
+//     title: "Aqua Suites",
+//     type: "Luxury Hotel",
+//     slug: "aqua-suites",
+//     src: images.aquacover,
+//   },
+//   {
+//     title: "The Hyundai Seoul",
+//     type: "Department Store",
+//     slug: "the-hyundai-seoul",
+//     src: images.hyundaicover,
+//   },
+// ];
