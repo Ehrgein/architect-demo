@@ -40,7 +40,7 @@ export const projects: Project[] = [
       "Discover Ocean Paradise, a luxurious country club in Bali, Indonesia, blending Balinese charm with modern elegance. Enjoy ocean views, world-class amenities, and sustainable luxury.",
     src: images.oceancover,
     images: images.oceanparadise,
-    alt: "Image of a country club with a pool",
+    alt: "Country club pool in Bali, Indonesia",
   },
   {
     id: 2,
@@ -143,13 +143,13 @@ export const projects: Project[] = [
     location: "Seoul, South Korea",
     slug: "the-hyundai-seoul",
     about_header:
-      "Aqua Suites offers a unique coastal-inspired luxury experience, blending serene design with the energy of Thailand’s bustling capital.",
+      "Redefining the modern shopping experience, blending cutting-edge design with nature-inspired spaces to create a luxury destination unlike any other in South Korea.",
     about_paragraph:
-      "Situated in the vibrant heart of Bangkok, Thailand, Aqua Suites redefines luxury with its coastal-inspired design and world-class amenities. This premier destination combines the tranquility of a seaside escape with the excitement of a bustling metropolis, offering guests a unique and unforgettable stay.",
+      "Located in the heart of Seoul, The Hyundai Seoul is more than just a department store—it’s a reimagined retail and cultural hub. With its vast open spaces, indoor gardens, and futuristic design, it offers an immersive shopping experience where luxury, innovation, and nature come together seamlessly.",
     project_details: [
-      "Aqua Suites features a sleek modern design with ocean-inspired interiors, creating a serene atmosphere in the middle of Bangkok. The suites are elegantly furnished with contemporary decor and offer breathtaking cityscape views.",
-      "Guests can enjoy a rooftop infinity pool, a state-of-the-art fitness center, and fine dining experiences featuring both Thai and international cuisine. Aqua Suites is designed to cater to both leisure and business travelers.",
-      "Sustainability is integral to Aqua Suites, with eco-friendly practices such as energy-efficient lighting, water recycling systems, and green rooftop gardens. The hotel exemplifies how luxury accommodations can prioritize environmental responsibility.",
+      "The Hyundai Seoul offers a shopping experience that feels as much like an art gallery as a retail destination. Its Sounds Forest, a lush indoor garden bathed in natural light, creates a tranquil escape from the city’s energy. The minimalist design, glass ceilings, and open layout enhance the sense of space and sophistication.",
+      "Beyond its striking aesthetics, The Hyundai Seoul curates a world-class selection of luxury brands and contemporary fashion. Flagship stores from global icons stand alongside emerging Korean designers, blending tradition with innovation. Digital elements, including smart displays and interactive installations, add a cutting-edge touch.",
+      "More than a retail space, The Hyundai Seoul is a destination where shopping, culture, and leisure merge. Visitors can explore art exhibitions, enjoy fine dining with city views, or relax in thoughtfully designed spaces. By prioritizing both atmosphere and innovation, it sets a new benchmark for modern department stores.",
     ],
     src: images.hyundaicover,
     images: images.hyundai,
