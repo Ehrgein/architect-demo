@@ -1,6 +1,5 @@
 import Image from "next/image";
 import Projects from "./components/ui/Projects";
-import NavProject from "./components/Layout/NavProject";
 import AboutUs from "./components/ui/AboutUs";
 import Hero from "./components/Layout/Hero";
 import Services from "./components/ui/Services";

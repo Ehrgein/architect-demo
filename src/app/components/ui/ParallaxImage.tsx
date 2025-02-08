@@ -6,7 +6,7 @@ import { motion, useScroll, useTransform } from "motion/react";
 type Dimensions = {
   width: "w-1/2" | "w-1/4" | "w-full";
   height: string;
-  src: StaticImageData;
+  src: StaticImageData | string;
   sizes: string;
 };
 

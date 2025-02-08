@@ -3,7 +3,6 @@ import React from "react";
 import ProjectAbout from "../../components/ui/ProjectAbout";
 import ParallaxImage from "../../components/ui/ParallaxImage";
 import StickyDescription from "../../components/ui/StickyDescription";
-import port1 from "../../../../public/port1.jpg";
 import NextProject from "../../components/Layout/NextProject";
 import NavProject from "@/app/components/Layout/NavProject";
 import { projects } from "@/app/constants/projectdata";
@@ -103,10 +102,10 @@ async function ProjectPage({ params }: { params: Promise<{ slug: string }> }) {
             <Image
               src={src}
               priority
+              alt="hi"
               sizes="(max-width: 1920px) 90vw"
               className="w-full h-full object-cover"
               fill
-              alt="hi"
             />
           </div>
           <ProjectAbout
@@ -119,7 +118,7 @@ async function ProjectPage({ params }: { params: Promise<{ slug: string }> }) {
           <div className="pt-36">
             <ParallaxImage
               sizes="(max-width: 768px) 95vw, (max-width: 1920px) 90vw"
-              src={images[0]}
+              src={images[1]}
               width={"w-full"}
               height={"h-[900px]"}
             />
@@ -127,21 +126,18 @@ async function ProjectPage({ params }: { params: Promise<{ slug: string }> }) {
           <section className="w-full grid grid-cols-2 gap-8 pt-36">
             <ParallaxImage
               sizes="(max-width: 768px) 50vw, (max-width: 1920px) 90vw"
-              src={images[1]}
+              src={images[2]}
               height="h-[850px]"
               width="w-full"
             />
             <ParallaxImage
               sizes="(max-width: 768px) 50vw, (max-width: 1920px) 90vw"
-              src={images[2]}
+              src={images[3]}
               height="h-[850px]"
               width="w-full"
             />
           </section>
-          <StickyDescription
-            src={images[3]}
-            project_details={project_details}
-          />
+          <StickyDescription src={src} project_details={project_details} />
           <div className="w-full grid grid-cols-2 gap-8 pt-36">
             <ParallaxImage
               sizes="(max-width: 768px) 50vw, (max-width: 1920px) 90vw"
