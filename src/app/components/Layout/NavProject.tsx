@@ -34,9 +34,6 @@ function NavProject() {
     setIsMenuOpen((prev) => {
       const newState = !prev;
 
-      // Correct logic: if menu is opening, disable scrolling
-      // document.body.style.overflow = newState ? "hidden" : "unset";
-
       return newState;
     });
   };
