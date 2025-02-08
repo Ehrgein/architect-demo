@@ -38,7 +38,7 @@ export const projects: Project[] = [
     ],
     description:
       "Discover Ocean Paradise, a luxurious country club in Bali, Indonesia, blending Balinese charm with modern elegance. Enjoy ocean views, world-class amenities, and sustainable luxury.",
-    src: images.villa1,
+    src: images.oceancover,
     images: images.oceanparadise,
     alt: "Image of a country club with a pool",
   },
@@ -59,7 +59,7 @@ export const projects: Project[] = [
       "The home is equipped with luxurious amenities, including an infinity pool, a private gym, and a spacious outdoor living area perfect for entertaining. Every aspect of the residence was designed with relaxation and functionality in mind.",
       "Sustainability was a key consideration in the construction, with energy-efficient systems, rainwater collection, and the use of locally sourced materials. The residence showcases how luxury can coexist with environmental consciousness.",
     ],
-    src: images.villa2,
+    src: images.alajuelacover,
     images: images.alajuela,
     description:
       "Explore Alajuela, a private residence in Costa Rica offering stunning views, modern design, and sustainable luxury. A serene retreat in the heart of nature.",
@@ -82,7 +82,7 @@ export const projects: Project[] = [
       "Sysyphus boasts world-class amenities, including a serene infinity pool overlooking the Aegean, a gourmet restaurant serving Mediterranean delicacies, and a wellness spa offering traditional Greek treatments.",
       "Dedicated to sustainability, the resort incorporates solar energy, water conservation systems, and eco-friendly materials into its operations. Sysyphus ensures that guests enjoy luxury while preserving the pristine beauty of Paros.",
     ],
-    src: images.villa3,
+    src: images.sysyphuscover,
     images: images.sysyphus,
     description:
       "Experience Sysyphus Luxury Resort in Paros, Greece. Enjoy Cycladic elegance, breathtaking Aegean views, and sustainable luxury. A perfect island retreat.",
@@ -105,7 +105,7 @@ export const projects: Project[] = [
       "Guests can enjoy a rooftop infinity pool, a state-of-the-art fitness center, and fine dining experiences featuring both Thai and international cuisine. Aqua Suites is designed to cater to both leisure and business travelers.",
       "Sustainability is integral to Aqua Suites, with eco-friendly practices such as energy-efficient lighting, water recycling systems, and green rooftop gardens. The hotel exemplifies how luxury accommodations can prioritize environmental responsibility.",
     ],
-    src: images.villa5,
+    src: images.soliscover,
     images: images.solis,
     description:
       "Stay at Aqua Suites, a luxury hotel in Bangkok, Thailand, blending coastal serenity with urban sophistication. Enjoy modern design, fine dining, and eco-friendly amenities.",
@@ -128,7 +128,7 @@ export const projects: Project[] = [
       "Guests can enjoy a rooftop infinity pool, a state-of-the-art fitness center, and fine dining experiences featuring both Thai and international cuisine. Aqua Suites is designed to cater to both leisure and business travelers.",
       "Sustainability is integral to Aqua Suites, with eco-friendly practices such as energy-efficient lighting, water recycling systems, and green rooftop gardens. The hotel exemplifies how luxury accommodations can prioritize environmental responsibility.",
     ],
-    src: images.villa4,
+    src: images.aquacover,
     images: images.aqua,
     description:
       "Stay at Aqua Suites, a luxury hotel in Bangkok, Thailand, blending coastal serenity with urban sophistication. Enjoy modern design, fine dining, and eco-friendly amenities.",
@@ -151,7 +151,7 @@ export const projects: Project[] = [
       "Guests can enjoy a rooftop infinity pool, a state-of-the-art fitness center, and fine dining experiences featuring both Thai and international cuisine. Aqua Suites is designed to cater to both leisure and business travelers.",
       "Sustainability is integral to Aqua Suites, with eco-friendly practices such as energy-efficient lighting, water recycling systems, and green rooftop gardens. The hotel exemplifies how luxury accommodations can prioritize environmental responsibility.",
     ],
-    src: images.shoppingmall,
+    src: images.hyundaicover,
     images: images.hyundai,
     description:
       "Stay at Aqua Suites, a luxury hotel in Bangkok, Thailand, blending coastal serenity with urban sophistication. Enjoy modern design, fine dining, and eco-friendly amenities.",

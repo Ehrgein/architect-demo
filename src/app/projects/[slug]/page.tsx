@@ -105,7 +105,7 @@ async function ProjectPage({ params }: { params: Promise<{ slug: string }> }) {
               src={src}
               priority
               alt={alt}
-              sizes="(max-width: 768px) 80vw, (max-width: 1920px) 90vw"
+              sizes="(max-width: 768px) 95vw, (max-width: 1920px) 100vw"
               className="w-full h-full object-cover"
               fill
             />
@@ -119,7 +119,7 @@ async function ProjectPage({ params }: { params: Promise<{ slug: string }> }) {
           />
           <div className="pt-36">
             <ParallaxImage
-              sizes={"(max-width: 1920px) 95vw"}
+              sizes={"(max-width: 1920px) 100vw"}
               src={images[1]}
               width={"w-full"}
               height={"h-[900px]"}
@@ -139,7 +139,10 @@ async function ProjectPage({ params }: { params: Promise<{ slug: string }> }) {
               width="w-full"
             />
           </section>
-          <StickyDescription src={src} project_details={project_details} />
+          <StickyDescription
+            src={images[0]}
+            project_details={project_details}
+          />
           <div className="w-full grid grid-cols-2 gap-8 pt-36">
             <ParallaxImage
               sizes="(max-width: 2440px) 50vw"
@@ -156,7 +159,7 @@ async function ProjectPage({ params }: { params: Promise<{ slug: string }> }) {
           </div>
           <div className="pt-36">
             <ParallaxImage
-              sizes="(max-width: 2440px) 50vw"
+              sizes="(max-width: 2440px) 100vw"
               src={images[6]}
               height="h-[750px] md:h-[950px]"
               width="w-full"

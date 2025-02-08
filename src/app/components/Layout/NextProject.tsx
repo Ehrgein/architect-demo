@@ -2,8 +2,7 @@
 import React from "react";
 import ParallaxImage from "../ui/ParallaxImage";
 import { StaticImageData } from "next/image";
-
-import ResetLenisLink from "@/app/helpers/ResetLenisLink";
+import TransitionLink from "@/app/helpers/TransitionLink";
 function NextProject({
   nextSlug,
   nextTitle,
@@ -28,14 +27,14 @@ function NextProject({
           </h2>
         </div>
         <div className="pt-10">
-          <ResetLenisLink href={`/projects/${nextSlug}`}>
+          <TransitionLink href={`/projects/${nextSlug}`}>
             <ParallaxImage
-              sizes="(max-width: 1920px) 90vw"
+              sizes="(max-width: 1920px) 95vw, 100vw"
               src={nextSrc}
               height="h-[550px] md:h-[650px]"
               width="w-full"
             />
-          </ResetLenisLink>
+          </TransitionLink>
         </div>
       </section>
     </>

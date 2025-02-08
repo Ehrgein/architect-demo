@@ -34,7 +34,7 @@ function StickyDescription({
           md:col-start-5 md:-col-end-1 w-full h-[500px] md:h-[1000px]"
           >
             <ParallaxImage
-              sizes="(max-width: 1920px) 40vw"
+              sizes="(max-width: 1920px) 50vw"
               src={src}
               width="w-full"
               height="h-full"

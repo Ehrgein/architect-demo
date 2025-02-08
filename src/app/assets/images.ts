@@ -1,10 +1,9 @@
-import { StaticImageData } from "next/image";
-import villa1 from "../../../public/villa1.jpg";
-import villa2 from "../../../public/villa2.jpg";
-import villa3 from "../../../public/villa3.jpg";
-import villa4 from "../../../public/villa4.jpg";
-import villa5 from "../../../public/newcapesolis.jpg";
-import shoppingmall from "../../../public/seoulstore.jpg";
+import oceancover from "../../../public/oceancover.jpg";
+import alajuelacover from "../../../public/alajuelacover.jpg";
+import sysyphuscover from "../../../public/sysyphuscover.jpg";
+import soliscover from "../../../public/soliscover.jpg";
+import aquacover from "../../../public/aquasuitescover.jpg";
+import hyundaicover from "../../../public/seoulstore.jpg";
 import sysyphus1 from "../../../public/timbersk1.jpg";
 import sysyphus2 from "../../../public/timbersk2.jpg";
 import sysyphus3 from "../../../public/timbersk3.jpg";
@@ -49,12 +48,12 @@ import hyundai6 from "../../../public/hyundai6.jpg";
 import hyundai7 from "../../../public/hyundai7.jpg";
 
 export const images = {
-  villa1,
-  villa2,
-  villa3,
-  villa4,
-  villa5,
-  shoppingmall,
+  oceancover,
+  alajuelacover,
+  aquacover,
+  soliscover,
+  sysyphuscover,
+  hyundaicover,
   sysyphus: [
     sysyphus1,
     sysyphus2,

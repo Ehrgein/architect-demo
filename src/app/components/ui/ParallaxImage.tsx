@@ -23,7 +23,11 @@ function ParallaxImage({ height, width, src, sizes }: Dimensions) {
   return (
     <>
       <div ref={ref} className={`w-full ${height} overflow-hidden`}>
-        <motion.div style={{ y }} className={`${width} h-full`}>
+        <motion.div
+          layout="position"
+          style={{ y }}
+          className={`${width} h-full`}
+        >
           <motion.div className="relative w-full h-full">
             <Image
               src={src}
