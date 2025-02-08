@@ -3,7 +3,7 @@ import "./globals.css";
 import SmoothScrolling from "./helpers/SmoothScrolling";
 import Footer from "./components/Layout/Footer";
 import NavProject from "./components/Layout/NavProject";
-// import Template from "./template";
+import TemplateTransition from "./template";
 
 const raleway = Raleway({
   variable: "--font-raleway",
@@ -25,7 +25,7 @@ export default function RootLayout({
       <body className={`antialiased bg-[#E5DCD8]`}>
         <SmoothScrolling>
           <NavProject />
-          {children}
+          <TemplateTransition>{children}</TemplateTransition>
           <Footer />
         </SmoothScrolling>
       </body>
