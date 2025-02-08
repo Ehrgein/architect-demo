@@ -29,6 +29,11 @@ export default {
           },
         ],
       },
+      screens: {
+        mobilesm: "320",
+        mobilemd: "375",
+        mobilexl: "425",
+      },
     },
   },
   plugins: [],
