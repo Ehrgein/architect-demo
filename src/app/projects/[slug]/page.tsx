@@ -48,7 +48,7 @@ function ProjectDescription({
       <h1 className="text-[6rem] leading-tight md:text-[6.8rem] pb-4 md:pb-4 lg:pb-5 xl:pb-8 desktop:pb-8 text-[#242424] font-medium">
         {title}
       </h1>
-      <div className="mobilemd:text-[12px] mobilexl:text-[13px] md:text-[15px] uppercase flex justify-between text-[#363636]">
+      <div className="mobilemd:text-[13px] mobilexl:text-[14px] md:text-[15px] uppercase flex justify-between text-[#363636]">
         <p>
           {type} - {subtype}
         </p>
