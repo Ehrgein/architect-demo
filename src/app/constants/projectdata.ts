@@ -94,7 +94,7 @@ export const projects: Project[] = [
     type: "Private Villa",
     year: 2023,
     subtype: "Commercial",
-    location: "Cape Town",
+    location: "Cape Town, South Africa",
     slug: "cape-solis",
     about_header:
       "Aqua Suites offers a unique coastal-inspired luxury experience, blending serene design with the energy of Thailand’s bustling capital.",

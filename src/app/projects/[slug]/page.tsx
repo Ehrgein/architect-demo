@@ -48,10 +48,11 @@ function ProjectDescription({
       <h1 className="text-[6rem] leading-tight md:text-[6.8rem] pb-4 md:pb-4 lg:pb-5 xl:pb-8 desktop:pb-8 text-[#242424] font-medium">
         {title}
       </h1>
-      <div className="mobilemd:text-[13px] mobilexl:text-[14px] md:text-[15px] uppercase flex justify-between text-[#363636]">
-        <p>
+      <div className="mobilemd:text-[14px] mobilexl:text-[15px] md:text-[15px] uppercase flex justify-between text-[#363636]">
+        <p className="hidden md:block">
           {type} - {subtype}
         </p>
+        <p className="md:hidden block">{type}</p>
         <p className="uppercase text-[#363636]">{location}</p>
       </div>
     </div>
