@@ -97,13 +97,13 @@ export const projects: Project[] = [
     location: "Cape Town, South Africa",
     slug: "cape-solis",
     about_header:
-      "Aqua Suites offers a unique coastal-inspired luxury experience, blending serene design with the energy of Thailand’s bustling capital.",
+      "Designed for effortless luxury and uninterrupted ocean views, offering a private retreat where modern elegance meets the untamed beauty of the coast.",
     about_paragraph:
-      "Situated in the vibrant heart of Bangkok, Thailand, Aqua Suites redefines luxury with its coastal-inspired design and world-class amenities. This premier destination combines the tranquility of a seaside escape with the excitement of a bustling metropolis, offering guests a unique and unforgettable stay.",
+      "Cape Solis is a masterpiece of modern architecture set against the striking backdrop of the Atlantic Ocean. Clean lines, natural textures, and expansive views define this private villa, where every space is carefully curated to offer a sense of peace and exclusivity. It’s a retreat where design and nature exist in perfect balance.",
     project_details: [
-      "Aqua Suites features a sleek modern design with ocean-inspired interiors, creating a serene atmosphere in the middle of Bangkok. The suites are elegantly furnished with contemporary decor and offer breathtaking cityscape views.",
-      "Guests can enjoy a rooftop infinity pool, a state-of-the-art fitness center, and fine dining experiences featuring both Thai and international cuisine. Aqua Suites is designed to cater to both leisure and business travelers.",
-      "Sustainability is integral to Aqua Suites, with eco-friendly practices such as energy-efficient lighting, water recycling systems, and green rooftop gardens. The hotel exemplifies how luxury accommodations can prioritize environmental responsibility.",
+      "Cape Solis is a secluded oceanfront villa in Cape Town, designed for those seeking privacy and tranquility. Perched on a coastal cliff, its architecture embraces panoramic sea views, with floor-to-ceiling windows that flood the interiors with natural light. The open-plan design seamlessly connects the indoor and outdoor spaces, allowing guests to fully immerse themselves in the breathtaking surroundings.",
+      "The villa features a spacious infinity pool overlooking the Atlantic, private terraces for unwinding at sunset, and elegantly designed interiors that balance modern simplicity with warm, natural textures. Each room is thoughtfully arranged to maximize comfort, with a focus on creating a peaceful, retreat-like atmosphere away from the city’s bustle.",
+      "With its dramatic setting and thoughtful design, Cape Solis is more than a getaway—it’s a sanctuary where the ocean’s rhythm sets the pace. Whether enjoying a morning coffee on the terrace or an evening by the fire, every moment here is defined by serenity and breathtaking beauty.",
     ],
     src: images.soliscover,
     images: images.solis,
