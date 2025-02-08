@@ -15,7 +15,7 @@ export type Project = {
   src: StaticImageData;
   images: StaticImageData[];
   description?: string;
-  alt?: string;
+  alt: string;
 };
 
 export const projects: Project[] = [

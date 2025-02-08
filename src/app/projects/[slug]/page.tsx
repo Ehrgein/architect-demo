@@ -6,6 +6,7 @@ import StickyDescription from "../../components/ui/StickyDescription";
 import NextProject from "../../components/Layout/NextProject";
 import NavProject from "@/app/components/Layout/NavProject";
 import { projects } from "@/app/constants/projectdata";
+import TwoColumnParallaxImage from "@/app/components/ui/TwoColumnParallaxImage";
 
 export async function generateMetadata({
   params,
@@ -79,6 +80,7 @@ async function ProjectPage({ params }: { params: Promise<{ slug: string }> }) {
     src,
     id,
     images,
+    alt,
   } = project;
 
   // const nextSlug = projects[id % projects.length].slug;
@@ -102,8 +104,8 @@ async function ProjectPage({ params }: { params: Promise<{ slug: string }> }) {
             <Image
               src={src}
               priority
-              alt="hi"
-              sizes="(max-width: 1920px) 90vw"
+              alt={alt}
+              sizes="(max-width: 768px) 80vw, (max-width: 1920px) 90vw"
               className="w-full h-full object-cover"
               fill
             />
@@ -117,7 +119,7 @@ async function ProjectPage({ params }: { params: Promise<{ slug: string }> }) {
           />
           <div className="pt-36">
             <ParallaxImage
-              sizes="(max-width: 768px) 95vw, (max-width: 1920px) 90vw"
+              sizes={"(max-width: 1920px) 95vw"}
               src={images[1]}
               width={"w-full"}
               height={"h-[900px]"}
@@ -125,13 +127,13 @@ async function ProjectPage({ params }: { params: Promise<{ slug: string }> }) {
           </div>
           <section className="w-full grid grid-cols-2 gap-8 pt-36">
             <ParallaxImage
-              sizes="(max-width: 768px) 50vw, (max-width: 1920px) 90vw"
               src={images[2]}
               height="h-[850px]"
               width="w-full"
+              sizes="(max-width: 2440px) 50vw"
             />
             <ParallaxImage
-              sizes="(max-width: 768px) 50vw, (max-width: 1920px) 90vw"
+              sizes="(max-width: 2440px) 50vw"
               src={images[3]}
               height="h-[850px]"
               width="w-full"
@@ -140,13 +142,13 @@ async function ProjectPage({ params }: { params: Promise<{ slug: string }> }) {
           <StickyDescription src={src} project_details={project_details} />
           <div className="w-full grid grid-cols-2 gap-8 pt-36">
             <ParallaxImage
-              sizes="(max-width: 768px) 50vw, (max-width: 1920px) 90vw"
+              sizes="(max-width: 2440px) 50vw"
               src={images[4]}
               height="h-[600px] md:h-[1000px]"
               width="w-full"
             />
             <ParallaxImage
-              sizes="(max-width: 768px) 50vw, (max-width: 1920px) 90vw"
+              sizes="(max-width: 2440px) 50vw"
               src={images[5]}
               height="h-[600px] md:h-[1000px]"
               width="w-full"
@@ -154,7 +156,7 @@ async function ProjectPage({ params }: { params: Promise<{ slug: string }> }) {
           </div>
           <div className="pt-36">
             <ParallaxImage
-              sizes="(max-width: 768px) 95vw, (max-width: 1920px) 90vw"
+              sizes="(max-width: 2440px) 50vw"
               src={images[6]}
               height="h-[750px] md:h-[950px]"
               width="w-full"
