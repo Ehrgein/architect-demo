@@ -30,9 +30,9 @@ export default {
         ],
       },
       screens: {
-        mobilesm: "320",
-        mobilemd: "375",
-        mobilexl: "425",
+        mobilesm: "320px",
+        mobilemd: "375px",
+        mobilexl: "425px",
       },
     },
   },
