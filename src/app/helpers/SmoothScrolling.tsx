@@ -9,6 +9,12 @@ function SmoothScrolling({ children }: { children: React.ReactNode }) {
 
   React.useEffect(() => {
     //required to stop lenis when pathname changes as otherwise window y value is kept.
+
+    if (window.location.hash) {
+      console.log(pathname, window.location.hash);
+      return;
+    }
+
     if (lenis) {
       lenis.stop();
     }

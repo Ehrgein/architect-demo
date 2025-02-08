@@ -4,33 +4,31 @@ import Link from "next/link";
 import { motion, useAnimation } from "framer-motion";
 import { menuOpen } from "@/app/helpers/beziers";
 import { scrollToSection } from "@/app/helpers/scrollToSection";
+import { usePathname } from "next/navigation";
 
 const links = [
   {
-    link: "home",
-    href: "/",
-  },
-  {
     link: "about",
-    href: "about-us",
+    href: "/#about-us",
   },
   {
     link: "services",
-    href: "/projects/cape-solis",
+    href: "/#services",
   },
   {
     link: "projects",
-    href: "projects",
+    href: "/#projects",
   },
   {
     link: "contact",
-    href: "contact",
+    href: "/#contact",
   },
 ];
 
 // border-b-[#0E0D0D]
 function NavProject() {
   const [isMenuOpen, setIsMenuOpen] = React.useState<boolean>(false);
+  const pathname = usePathname();
 
   const handleMenu = () => {
     setIsMenuOpen((prev) => {
@@ -45,11 +43,21 @@ function NavProject() {
 
   const handleLinkToSection = (
     e: React.MouseEvent<HTMLAnchorElement>,
-    href: string
+    href: string,
+    isMobile?: boolean
   ) => {
-    e.preventDefault();
-    setIsMenuOpen(false);
-    scrollToSection(href);
+    if (isMobile) {
+      setIsMenuOpen(false);
+    }
+
+    if (pathname === "/" && href.startsWith("/#")) {
+      e.preventDefault();
+      const sectionId = href.split("#")[1];
+      const section = document.getElementById(sectionId);
+      if (section) {
+        section.scrollIntoView({ behavior: "smooth" });
+      }
+    }
   };
 
   return (
@@ -62,18 +70,24 @@ function NavProject() {
             </Link>
           </h2>
           <ul className="hidden md:flex gap-12 pr-8">
-            {["About", "Projects", "Services", "Contact"].map((item) => (
-              <li key={item} className="relative group overflow-hidden">
-                <Link href={`/projects/cape-solis`} className="block">
-                  <p className="group-hover:-translate-y-full transition-transform duration-[350ms] ease-in-out">
-                    {item}
-                  </p>
-                  <p className="absolute left-0 w-full transition-transform duration-[350ms] ease-in-out group-hover:-translate-y-full">
-                    {item}
-                  </p>
-                </Link>
-              </li>
-            ))}
+            {links.map(({ link, href }, index) => {
+              return (
+                <li key={index} className="relative group overflow-hidden">
+                  <Link
+                    href={`${href}`}
+                    className="block"
+                    onClick={(e) => handleLinkToSection(e, href, false)}
+                  >
+                    <p className="group-hover:-translate-y-full transition-transform duration-[350ms] ease-in-out">
+                      {link}
+                    </p>
+                    <p className="absolute left-0 w-full transition-transform duration-[350ms] ease-in-out group-hover:-translate-y-full">
+                      {link}
+                    </p>
+                  </Link>
+                </li>
+              );
+            })}
           </ul>
           <div onClick={handleMenu} className="md:hidden">
             <svg
@@ -120,14 +134,14 @@ function NavProject() {
               }}
               className="flex flex-col border-b-[1px] border-black-pure"
             >
-              {links.map(({ link, href }, index) => (
+              {links.map(({ href, link }, index) => (
                 <li
                   key={href}
                   className={`text-base text-white font-light capitalize`}
                 >
                   <Link
-                    onClick={(e) => handleLinkToSection(e, href)}
-                    href="#"
+                    onClick={(e) => handleLinkToSection(e, href, true)}
+                    href={href}
                     className="block overflow-hidden"
                   >
                     <motion.span
