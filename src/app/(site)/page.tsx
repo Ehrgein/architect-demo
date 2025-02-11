@@ -1,9 +1,9 @@
 import Image from "next/image";
-import Projects from "./components/ui/Projects";
-import AboutUs from "./components/ui/AboutUs";
-import Hero from "./components/Layout/Hero";
-import Services from "./components/ui/Services";
-import Contact from "./components/Layout/Contact";
+import Projects from "../components/ui/Projects";
+import AboutUs from "../components/ui/AboutUs";
+import Hero from "../components/Layout/Hero";
+import Services from "../components/ui/Services";
+import Contact from "../components/Layout/Contact";
 
 export default function Home() {
   return (

@@ -6,7 +6,7 @@ function StickyDescription({
   src,
   project_details,
 }: {
-  src: StaticImageData;
+  src: string | StaticImageData;
   project_details: string[];
 }) {
   return (

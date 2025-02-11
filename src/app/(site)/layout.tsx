@@ -1,8 +1,8 @@
 import { Raleway, Inter } from "next/font/google";
 import "./globals.css";
-import SmoothScrolling from "./helpers/SmoothScrolling";
-import Footer from "./components/Layout/Footer";
-import NavProject from "./components/Layout/NavProject";
+import SmoothScrolling from "../helpers/SmoothScrolling";
+import Footer from "../components/Layout/Footer";
+import NavProject from "../components/Layout/NavProject";
 import TemplateTransition from "./template";
 
 const raleway = Raleway({

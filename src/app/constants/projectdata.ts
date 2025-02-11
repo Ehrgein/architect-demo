@@ -86,7 +86,7 @@ export const projects: Project[] = [
     images: images.sysyphus,
     description:
       "Experience Sysyphus Luxury Resort in Paros, Greece. Enjoy Cycladic elegance, breathtaking Aegean views, and sustainable luxury. A perfect island retreat.",
-    alt: "Luxury resort in Paros facing the sea",
+    alt: "s",
   },
   {
     id: 4,

@@ -10,7 +10,7 @@ function NextProject({
 }: {
   nextSlug: string;
   nextTitle: string;
-  nextSrc: StaticImageData;
+  nextSrc: StaticImageData | string;
 }) {
   return (
     <>
