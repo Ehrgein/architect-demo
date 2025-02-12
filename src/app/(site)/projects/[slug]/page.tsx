@@ -94,11 +94,6 @@ async function ProjectPage({ params }: { params: Promise<{ slug: string }> }) {
     options
   );
 
-  const response = await fetch("/api/sanity/projects");
-  const json = await response.json();
-
-  console.log(json);
-
   const currentProject = sanityProject.find(
     (project) => project.slug.current === slug
   );
