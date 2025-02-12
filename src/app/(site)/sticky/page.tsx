@@ -1,5 +1,5 @@
 import React from "react";
-import { projects } from "../constants/projectdata";
+import { projects } from "../../constants/projectdata";
 import Image from "next/image";
 
 function Sticky() {

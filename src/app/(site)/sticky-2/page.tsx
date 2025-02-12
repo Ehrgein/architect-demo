@@ -1,5 +1,5 @@
 import React from "react";
-import FixedNavBar from "../components/ui/FixedNavBar";
+import FixedNavBar from "../../components/ui/FixedNavBar";
 
 function StickyTwo() {
   return (
