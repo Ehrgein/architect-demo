@@ -6,7 +6,6 @@ const client = createClient({
   dataset: process.env.SANITY_API_DATASET,
   apiVersion: "2025-02-01",
   useCdn: false,
-  token: process.env.SANITY_API_READ_TOKEN, // 🔒 Securely use the token
 });
 
 export async function GET() {
