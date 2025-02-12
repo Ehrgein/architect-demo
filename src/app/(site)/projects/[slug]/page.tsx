@@ -4,7 +4,6 @@ import ProjectAbout from "@/app/components/ui/ProjectAbout";
 import ParallaxImage from "@/app/components/ui/ParallaxImage";
 import StickyDescription from "@/app/components/ui/StickyDescription";
 import NextProject from "@/app/components/Layout/NextProject";
-import NavProject from "@/app/components/Layout/NavProject";
 import { projects } from "@/app/constants/projectdata";
 import { type SanityDocument } from "next-sanity";
 import { client } from "@/sanity/client";
@@ -94,6 +93,10 @@ async function ProjectPage({ params }: { params: Promise<{ slug: string }> }) {
     {},
     options
   );
+
+  const projectsSanity = await fetch("/api/sanity/projects");
+
+  console.log(projectsSanity, "hi these are my projects");
 
   const currentProject = sanityProject.find(
     (project) => project.slug.current === slug
