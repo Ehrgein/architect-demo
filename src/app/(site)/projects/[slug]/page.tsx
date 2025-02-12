@@ -127,8 +127,6 @@ async function ProjectPage({ params }: { params: Promise<{ slug: string }> }) {
     (project) => project.slug.current === slug
   );
 
-  console.log(sanityProject, "projects");
-
   const nextProject = (currentProjectIndex + 1) % sanityProject.length;
   const nextSlug = sanityProject[nextProject].slug.current;
   const nextTitle = sanityProject[nextProject].title;
